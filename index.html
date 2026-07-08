@@ -99,20 +99,42 @@ function createPresetSlots(x,y){
   c.slots.push(...a); selectedSlotIds=a.map(s=>s.id); selectedSlotId=a[0]?.id||null; c.status="사용자 편집중"; saveAuto(); render();
 }
 
+function isValidData(p){
+  if(!p || !Array.isArray(p.circuits) || !p.circuits.length) return false;
+  return p.circuits.every(c => c && typeof c === "object" && Array.isArray(c.slots));
+}
 function loadSaved(){
   try{
     let s=localStorage.getItem(SAVE_KEY);
-    if(!s) return;
+    if(!s) return false;
     let p=JSON.parse(s);
     // 예전 HTML의 깨진 저장값(1번만 반복/18번 누락 등)이 새 HTML을 덮어쓰지 못하게 검증
-    let ok=p && Array.isArray(p.circuits) && p.circuits.length===DEFAULT_DATA.circuits.length;
+    let ok=isValidData(p) && p.circuits.length===DEFAULT_DATA.circuits.length;
     if(ok){
       let nums=p.circuits.map(c=>+c.number).join(","), base=DEFAULT_DATA.circuits.map(c=>+c.number).join(",");
       ok = nums===base;
     }
-    if(ok) APP_DATA=p;
-    else localStorage.removeItem(SAVE_KEY);
+    if(ok){ APP_DATA=p; return true; }
+    localStorage.removeItem(SAVE_KEY);
   }catch(e){localStorage.removeItem(SAVE_KEY)}
+  return false;
+}
+async function loadDataJson(){
+  // GitHub Pages 배포용: 같은 폴더의 data.json을 항상 우선으로 읽는다.
+  // 캐시 때문에 수정 데이터가 늦게 보이지 않도록 매번 쿼리값을 붙인다.
+  try{
+    const url = "./data.json?ts=" + Date.now();
+    const res = await fetch(url, {cache:"no-store"});
+    if(!res.ok) throw new Error("HTTP " + res.status);
+    const p = await res.json();
+    if(!isValidData(p)) throw new Error("data.json 형식 오류");
+    APP_DATA = p;
+    try{ localStorage.setItem(SAVE_KEY, JSON.stringify(APP_DATA)); }catch(e){}
+    return true;
+  }catch(e){
+    console.warn("data.json 자동 불러오기 실패 - 로컬 저장/내장 데이터 사용", e);
+    return false;
+  }
 }
 function saveAuto(){
   dirty=true;
@@ -121,7 +143,12 @@ function saveAuto(){
 }
 function saveNow(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(APP_DATA)); dirty=false;}catch(e){console.warn(e)}}
 function rebuildSelect(){select.innerHTML=""; APP_DATA.circuits.forEach((c,i)=>{let o=document.createElement("option");o.value=i;o.textContent=`${c.number}번 - ${c.status}`;select.appendChild(o)}); select.value=currentIndex}
-function init(){loadSaved(); rebuildSelect(); render()}
+async function init(){
+  const loadedRemote = await loadDataJson();
+  if(!loadedRemote) loadSaved();
+  rebuildSelect();
+  render();
+}
 function render(){
   let c=current(); stage.style.transform=`scale(${zoom})`; slotElMap.clear();
   wrap.className="canvasWrap"+(showLabels?" showLabels":""); 

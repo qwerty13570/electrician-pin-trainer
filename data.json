@@ -816,9 +816,9 @@
           "memo": ""
         },
         {
-          "id": "slot_mrc5ltn5_uu2",
+          "id": "slot_mrc6iauw_fq3",
           "label": "접점 상",
-          "x": 78.17,
+          "x": 78.42,
           "y": 28.32,
           "answer": "1",
           "type": "alt",
@@ -830,9 +830,9 @@
           "altVisibleCount": 4
         },
         {
-          "id": "slot_mrc5ltn5_mcy",
+          "id": "slot_mrc6iauw_t2h",
           "label": "접점 하",
-          "x": 78.17,
+          "x": 78.42,
           "y": 32.52,
           "answer": "3",
           "type": "alt",
@@ -844,9 +844,9 @@
           "altVisibleCount": 4
         },
         {
-          "id": "slot_mrc5m8e0_sjl",
+          "id": "slot_mrc6icrk_4hg",
           "label": "접점 상",
-          "x": 67.58,
+          "x": 67.5,
           "y": 54.26,
           "answer": "8",
           "type": "alt",
@@ -858,9 +858,9 @@
           "altVisibleCount": 4
         },
         {
-          "id": "slot_mrc5m8e0_dca",
+          "id": "slot_mrc6icrk_phs",
           "label": "접점 하",
-          "x": 67.58,
+          "x": 67.5,
           "y": 58.46,
           "answer": "6",
           "type": "alt",
