@@ -81,6 +81,15 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
   .slot{width:22px;height:20px;font-size:12px;border-width:2px;border-radius:5px;touch-action:none;}
   .markerLabel{font-size:10px;}
   .toolGrid{grid-template-columns:1fr 1fr;}
+
+  body.mobileRef .canvasWrap,
+  body.mobileRef .canvasWrap *,
+  body.mobileRef .slot.ref{
+    -webkit-user-select:none!important;
+    user-select:none!important;
+    -webkit-touch-callout:none!important;
+    caret-color:transparent!important;
+  }
   input,select,textarea,button{font-size:16px;}
 }
 
@@ -399,7 +408,7 @@ function renderSlot(slot){
     // 다중선택 중에는 focus 이벤트가 기존 선택 목록을 지우면 안 된다.
     if(!multiSelectMode && !selectedSlotIds.includes(slot.id)) selectedSlotIds=[slot.id];
     highlightOnly();
-    try{el.select()}catch(e){}
+    if(mode!=="ref"){ try{el.select()}catch(e){} }
   };
   el.onkeydown=e=>handleSlotKey(e,slot,el);
 
@@ -423,7 +432,11 @@ function renderSlot(slot){
   else if(mode==="ref"){
     el.value=(slot.type==="ignore"?"":(slot.answer||""));
     el.readOnly=true;
+    el.tabIndex=-1;
     el.classList.add("ref");
+    el.addEventListener("focus",()=>el.blur());
+    el.addEventListener("selectstart",e=>e.preventDefault());
+    el.addEventListener("contextmenu",e=>e.preventDefault());
   }
   else{
     el.value=localStorage.getItem(storageKey(current(),slot))||"";
