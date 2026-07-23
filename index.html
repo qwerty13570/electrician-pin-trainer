@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>전기기능사 실기 핀번호 암기 v4 패턴목록</title>
+<title>전기기능사 실기 핀번호 연습</title>
 <style>
 :root{--bg:#0b1020;--panel:#111827;--line:#334155;--text:#e5e7eb;--muted:#94a3b8;--accent:#60a5fa;--ok:#22c55e;--bad:#ef4444;--warn:#f59e0b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -15,6 +15,38 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
 .slot.correct{border-color:var(--ok);background:#dcfce7}
 .slot.refOnly{border-style:dotted;background:#fef9c3;color:#713f12}.slot.wrong{border-color:var(--bad);background:#fee2e2}.slot.emptyWrong{border-color:var(--warn);background:#fef3c7}.slot.ignore{opacity:.35;border-style:dashed}.slot.ref{pointer-events:none;background:#e0f2fe;color:#082f49}
 .slot.altColor0{border-color:#ef4444;background:#fee2e2;color:#111827}.slot.altColor1{border-color:#f97316;background:#ffedd5;color:#111827}.slot.altColor2{border-color:#eab308;background:#fef9c3;color:#111827}.slot.altColor3{border-color:#22c55e;background:#dcfce7;color:#111827}.slot.altColor4{border-color:#06b6d4;background:#cffafe;color:#111827}.slot.altColor5{border-color:#3b82f6;background:#dbeafe;color:#111827}.slot.altColor6{border-color:#8b5cf6;background:#ede9fe;color:#111827}.slot.altColor7{border-color:#ec4899;background:#fce7f3;color:#111827}
+/* 패턴 그룹 내부에서 같은 정답값을 가진 칸끼리 같은 색상 */
+.slot.altPairColor0{border-color:#FF0000;background:#FFE5E5;color:#111827}
+.slot.altPairColor1{border-color:#0066FF;background:#E6F0FF;color:#111827}
+.slot.altPairColor2{border-color:#00A000;background:#E5FFE5;color:#111827}
+.slot.altPairColor3{border-color:#FFD400;background:#FFF7B3;color:#111827}
+.slot.altPairColor4{border-color:#7A00FF;background:#EFE0FF;color:#111827}
+.slot.altPairColor5{border-color:#00C8FF;background:#DDF9FF;color:#111827}
+.slot.altPairColor6{border-color:#FF1493;background:#FFE0F0;color:#111827}
+.slot.altPairColor7{border-color:#000000;background:#EEEEEE;color:#111827}
+
+.patternNoBadge{
+  display:none!important;
+  position:absolute;
+  transform:translate(-50%,calc(-50% - 25px));
+  z-index:8;
+  min-width:22px;height:22px;padding:0 5px;
+  border-radius:999px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:1000;line-height:1;
+  color:#fff;border:2px solid #fff;
+  box-shadow:0 1px 4px rgba(0,0,0,.75);
+  pointer-events:none;
+}
+.patternNoBadge.altPairColor0{background:#FF0000}
+.patternNoBadge.altPairColor1{background:#0066FF}
+.patternNoBadge.altPairColor2{background:#00A000}
+.patternNoBadge.altPairColor3{background:#C7A600;color:#111}
+.patternNoBadge.altPairColor4{background:#7A00FF}
+.patternNoBadge.altPairColor5{background:#00A9D6;color:#111}
+.patternNoBadge.altPairColor6{background:#FF1493}
+.patternNoBadge.altPairColor7{background:#000000}
+
 .markerLabel{position:absolute;transform:translate(-50%,calc(-50% - 22px));font-size:11px;z-index:2;color:#111827;background:rgba(255,255,255,.9);padding:1px 4px;border-radius:5px;white-space:nowrap;display:none}.showLabels .markerLabel{display:block}
 .selectionBox{position:absolute;border:2px dashed #22c55e;background:rgba(34,197,94,.12);z-index:10;pointer-events:none}
 .side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;max-height:calc(100vh - 104px);overflow:auto}.small{font-size:13px;color:var(--muted);line-height:1.45}.result{padding:10px;border-radius:10px;background:#0b1220;border:1px solid var(--line);margin:10px 0;white-space:pre-wrap}
@@ -26,30 +58,48 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
 
 /* 모바일 참고모드 전용 UI: PC에서는 기존 화면 유지, 폰/좁은 화면에서는 참고모드 보기만 표시 */
 @media (max-width: 768px), (pointer: coarse) {
-  html, body { width:100%; min-height:100%; overflow:hidden; background:#020617; }
+  html, body { width:100%; min-height:100%; overflow:auto; background:#020617; }
   header{padding:6px 6px 7px; position:sticky; top:0; z-index:1000;}
   h1{font-size:14px; line-height:1.2; margin:0 0 6px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   body.mobileRef h1::after{content:" · 모바일 참고"; color:#93c5fd; font-weight:800;}
+  body.mobileView:not(.mobileRef) h1::after{content:" · 모바일 시험"; color:#86efac; font-weight:800;}
   .toolbar{gap:5px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:1px;}
   .toolbar button,.toolbar select{font-size:13px; padding:8px 9px; min-height:38px; flex:0 0 auto;}
-  .modeBtn[data-mode="edit"], .modeBtn[data-mode="exam"], #labelBtn, #exportBtn, #importBtn, #resetDataBtn{display:none!important;}
-  main{display:block; padding:0; height:calc(100dvh - 72px);}
-  .side{display:none!important;}
-  .viewer{height:calc(100dvh - 72px); border:0; border-radius:0; padding:4px; background:#020617; overflow:auto; -webkit-overflow-scrolling:touch; touch-action:pan-x pan-y pinch-zoom;}
+  /* 모바일에서는 시험/참고만 제공하고 편집·데이터 관리 UI는 숨김 */
+  .modeBtn[data-mode="edit"],#exportBtn,#importBtn,#resetDataBtn{display:none!important;}
+  main{display:flex; flex-direction:column; gap:8px; padding:0 0 8px; height:auto;}
+  .viewer{height:58dvh; min-height:320px; border:0; border-radius:0; padding:4px; background:#020617; overflow:auto; -webkit-overflow-scrolling:touch; touch-action:pan-x pan-y pinch-zoom;}
+  .side{display:block!important; order:0; margin:0 6px; padding:10px; max-height:none; overflow:visible; border-radius:10px;}
+  body.mobileRef main{height:calc(100dvh - 72px); padding:0;}
+  body.mobileRef .viewer{height:calc(100dvh - 72px); min-height:0;}
+  body.mobileRef .side{display:none!important;}
   .canvasWrap{border-radius:0;}
   .canvasWrap img{border-radius:0;}
-  .slot{width:24px; height:22px; font-size:13px; border-width:2px; border-radius:6px;}
+  .slot{width:28px; height:26px; font-size:14px; border-width:2px; border-radius:6px; touch-action:none;}
   .markerLabel{font-size:10px;}
+  .toolGrid{grid-template-columns:1fr 1fr;}
+  input,select,textarea,button{font-size:16px;}
 }
 
 @media (orientation: portrait) and (max-width: 768px) {
   body.mobileRef::before{content:"가로로 돌리면 더 크게 보입니다"; position:fixed; left:50%; bottom:10px; transform:translateX(-50%); z-index:2000; background:rgba(2,6,23,.88); color:#dbeafe; border:1px solid #334155; padding:7px 10px; border-radius:999px; font-size:12px; pointer-events:none;}
 }
 
+
+/* 패턴 번호 원형 배지 완전 숨김 */
+.patternNoBadge{display:none!important;}
+
+/* 복수정답 패턴 색상: 빨강 → 초록 → 보라 → 노랑 */
+.slot.altPairColor0{border-color:#ef0000!important;background:#ffe1e1!important;color:#111827!important}
+.slot.altPairColor1{border-color:#00a000!important;background:#ddffdd!important;color:#111827!important}
+.slot.altPairColor2{border-color:#7a00ff!important;background:#eee0ff!important;color:#111827!important}
+.slot.altPairColor3{border-color:#d6a900!important;background:#fff3a6!important;color:#111827!important}
+.patternNoBadge{display:none!important}
+
 </style>
 </head>
 <body>
-<header><h1>전기기능사 실기 핀번호 암기 v4 패턴목록</h1><div class="toolbar">
+<header><h1>전기기능사 실기 핀번호 연습</h1><div class="toolbar">
 <button data-mode="edit" class="modeBtn active">편집모드</button><button data-mode="exam" class="modeBtn">시험모드</button><button data-mode="ref" class="modeBtn">참고모드</button>
 <select id="circuitSelect"></select><button id="labelBtn">라벨 표시</button><button id="zoomOutBtn">-</button><button id="zoomInBtn">+</button><button id="resetZoomBtn">100%</button>
 <button id="exportBtn" class="ok">데이터 내보내기</button><button id="importBtn" class="warn">데이터 불러오기</button><button id="resetDataBtn" class="bad">내장 데이터로 초기화</button><input id="importFile" type="file" accept=".json" style="display:none">
@@ -97,7 +147,7 @@ const DEFAULT_DATA = {"version":"pin-trainer-v4-alt-rules","circuits":[{"id":"c0
 let APP_DATA = JSON.parse(JSON.stringify(DEFAULT_DATA));
 let mode="edit", currentIndex=0, selectedSlotId=null, selectedSlotIds=[], showLabels=false, zoom=1, drag=null, currentPreset="single", boxSelect=null;
 let multiSelectMode=false; // M 키로 켜고 끄는 다중 선택 모드
-const SAVE_KEY="ef_pin_trainer_v4_group_patterns_20260708f";
+const SAVE_KEY="ef_pin_trainer_v4_pattern_color_number_20260723";
 let saveTimer=null, dirty=false;
 const select=document.getElementById("circuitSelect"), wrap=document.getElementById("canvasWrap"), stage=document.getElementById("stage"), info=document.getElementById("circuitInfo"), props=document.getElementById("props"), resultBox=document.getElementById("resultBox"), wrongList=document.getElementById("wrongList"), jsonEditor=document.getElementById("jsonEditor");
 let slotElMap=new Map();
@@ -108,26 +158,41 @@ function isMobileView(){
 function updateModeButtons(){
   document.querySelectorAll(".modeBtn").forEach(b=>b.classList.toggle("active", b.dataset.mode===mode));
 }
+function clearExamInputs(circuit){
+  (circuit?.slots||[]).forEach(slot=>{
+    localStorage.removeItem(storageKey(circuit,slot));
+  });
+}
+
 function setMode(next){
+  const enteringExam = next==="exam" && mode!=="exam";
   mode=next;
   selectedSlotId=null;
   selectedSlotIds=[];
+  if(enteringExam) clearExamInputs(current());
   updateModeButtons();
+  applyResponsiveMode();
   render();
 }
 function applyResponsiveMode(){
   const mobile=isMobileView();
-  document.body.classList.toggle("mobileRef", mobile);
-  if(mobile && !wasMobileRef){
-    mode="ref";
+  // 모바일에서는 편집모드 진입을 막고 시험모드로 자동 전환
+  if(mobile && mode==="edit"){
+    mode="exam";
     selectedSlotId=null;
     selectedSlotIds=[];
+    multiSelectMode=false;
+    clearExamInputs(current());
     updateModeButtons();
+  }
+  document.body.classList.toggle("mobileView", mobile);
+  document.body.classList.toggle("mobileRef", mobile && mode==="ref");
+  if(mobile && !wasMobileRef){
     zoom=Math.max(0.35, Math.min(1, +(((window.innerWidth||480)-12)/1200).toFixed(2)));
     wasMobileRef=true;
   }else if(!mobile && wasMobileRef){
     wasMobileRef=false;
-    document.body.classList.remove("mobileRef");
+    document.body.classList.remove("mobileView","mobileRef");
   }
 }
 
@@ -195,7 +260,7 @@ function saveAuto(){
   saveTimer=setTimeout(()=>{try{localStorage.setItem(SAVE_KEY,JSON.stringify(APP_DATA)); dirty=false;}catch(e){console.warn(e)}},600);
 }
 function saveNow(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(APP_DATA)); dirty=false;}catch(e){console.warn(e)}}
-function rebuildSelect(){select.innerHTML=""; APP_DATA.circuits.forEach((c,i)=>{let o=document.createElement("option");o.value=i;o.textContent=`${c.number}번 - ${c.status}`;select.appendChild(o)}); select.value=currentIndex}
+function rebuildSelect(){select.innerHTML=""; APP_DATA.circuits.forEach((c,i)=>{let o=document.createElement("option");o.value=i;o.textContent=`${c.number}번`;select.appendChild(o)}); select.value=currentIndex}
 async function init(){
   const loadedRemote = await loadDataJson();
   if(!loadedRemote) loadSaved();
@@ -207,10 +272,10 @@ function render(){
   let c=current(); stage.style.transform=`scale(${zoom})`; slotElMap.clear();
   wrap.className="canvasWrap"+(showLabels?" showLabels":""); 
   wrap.innerHTML=`<img id="diagram" src="${c.image}" alt="${c.title}">`;
-  info.innerHTML=`<b>${c.title}</b><br>상태: ${c.status}<br>${c.note||""}<br>등록 칸: ${(c.slots||[]).length}개`;
+  info.innerHTML=`<b>${c.title}</b><br>${c.note||""}<br>등록 칸: ${(c.slots||[]).length}개`;
   let diagram=wrap.querySelector("#diagram"); diagram.onclick=onDiagramClick; diagram.onpointerdown=startBoxSelect; diagram.onpointermove=moveBoxSelect; diagram.onpointerup=endBoxSelect;
   (c.slots||[]).forEach(renderSlot);
-  // 선택 순서 숫자 배지는 혼란스러워서 숨김. 선택 순서는 오른쪽 대상 목록으로만 확인.
+  if(mode==="edit" || mode==="ref") renderAltPatternBadges();
   if(mode==="ref") renderAltHints();
   document.getElementById("panelTitle").textContent=mode==="edit"?"편집":mode==="exam"?"채점":"참고";
   document.getElementById("editHelp").style.display=mode==="edit"?"":"none";
@@ -220,6 +285,35 @@ function render(){
   wrongList.innerHTML="";
   setResultMessage();
 }
+
+function renderAltPatternBadges(){
+  return; // 패턴은 색상으로만 구분하며 원형 숫자 배지는 표시하지 않는다.
+  const circ=current();
+  const groups={};
+  (circ.slots||[]).filter(s=>s.type==="alt"&&(s.altKey||s.pairKey)).forEach(s=>{
+    const key=s.altKey||s.pairKey;
+    (groups[key] ||= []).push(s);
+  });
+
+  Object.values(groups).forEach(group=>{
+    const g=group.slice().sort(slotOrderForAlt);
+    const patterns=parseAltPatterns(g.find(s=>s.altPatterns)?.altPatterns || "");
+    const pm=patternModeFor(g.length, patterns);
+    if(!pm.ok || pm.mode!=="blocks4") return;
+
+    g.forEach((slot,index)=>{
+      const patternIndex=Math.floor(index/4);
+      const badge=document.createElement("div");
+      badge.className="patternNoBadge altPairColor"+(patternIndex%8);
+      badge.style.left=slot.x+"%";
+      badge.style.top=slot.y+"%";
+      badge.textContent=String(patternIndex+1);
+      badge.title=`허용 패턴 ${patternIndex+1}`;
+      wrap.appendChild(badge);
+    });
+  });
+}
+
 function renderSelectionOrderBadges(){
   selectedSlotIds.forEach((id,i)=>{
     let sl=(current().slots||[]).find(s=>s.id===id);
@@ -238,16 +332,43 @@ function altGroupColorIndex(key){
   let idx=keys.indexOf(key);
   return (idx<0?0:idx)%8;
 }
+function altPairColorIndex(slot){
+  if(!slot || slot.type!=="alt") return 0;
+  let key=slot.altKey||slot.pairKey;
+  let g=getGroupSlots(key).slice().sort(slotOrderForAlt);
+  let patterns=parseAltPatterns(g.find(s=>s.altPatterns)?.altPatterns || "");
+  let pm=patternModeFor(g.length, patterns);
+  let idx=g.findIndex(x=>x.id===slot.id);
+  if(idx<0) return 0;
+
+  // 구버전 8칸 그룹에서는 뒤쪽 참고 슬롯을 두 번째 색으로 구분한다.
+  // 예: 4,10/4,10 = 빨강(첫 4칸), 10,4/10,4 = 주황(다음 4칸)
+  if(pm.ok && pm.mode==="legacyAlternatives4") return Math.floor(idx/4)%8;
+
+  // 4칸 블록 방식은 각 줄/블록마다 색상을 다르게 표시한다.
+  if(pm.ok && pm.mode==="blocks4") return Math.floor(idx/4)%4;
+
+  // 대체 정답 방식은 같은 그룹 색으로 표시한다.
+  return 0;
+}
+function useAltPairColors(slot){
+  // 기존에 만든 그룹도 기본적으로 같은 정답값끼리 색상을 묶는다.
+  return !!slot && slot.type==="alt" && slot.altPairColors!==false;
+}
 function visibleAltCountForGroup(g){
   g=(g||[]).slice().sort(slotOrderForAlt);
   let patterns=parseAltPatterns(g.find(s=>s.altPatterns)?.altPatterns || "");
   let pm=patternModeFor(g.length, patterns);
-  return (pm.ok && pm.mode==="blocks4") ? 4 : g.length;
+  // 편집/참고모드에서는 모든 패턴 칸을 보여주되,
+  // 시험모드에서는 중복 정답 그룹마다 대표 입력칸 4개만 남긴다.
+  return (pm.ok && (pm.mode==="legacyAlternatives4" || pm.mode==="blocks4")) ? 4 : g.length;
 }
 function isAltHiddenInExam(slot){
   if(mode!=="exam" || !slot || slot.type!=="alt") return false;
   let key=slot.altKey||slot.pairKey;
-  let g=getGroupSlots(key);
+  // 표시 여부도 채점과 똑같은 정렬 결과를 사용해야 한다.
+  // 정렬하지 않으면 화면에 남긴 4칸과 실제 채점하는 4칸이 달라질 수 있다.
+  let g=getGroupSlots(key).slice().sort(slotOrderForAlt);
   let visible=visibleAltCountForGroup(g);
   let idx=g.findIndex(x=>x.id===slot.id);
   return idx>=visible;
@@ -255,7 +376,13 @@ function isAltHiddenInExam(slot){
 function renderSlot(slot){
   if(mode==="exam" && (slot.type==="refOnly" || isAltHiddenInExam(slot))) return;
   let el=document.createElement("input");
-  el.className="slot"+(slot.id===selectedSlotId?" selected":"")+(selectedSlotIds.includes(slot.id)?" multi":"")+(slot.type==="ignore"?" ignore":"")+(slot.type==="refOnly"?" refOnly":"")+((mode==="ref"&&slot.type==="alt")?" altColor"+altGroupColorIndex(slot.altKey||slot.pairKey):"");
+  let altColorClass="";
+  if((mode==="ref" || mode==="edit") && slot.type==="alt") {
+    altColorClass = useAltPairColors(slot)
+      ? " altPairColor"+altPairColorIndex(slot)
+      : " altColor"+altGroupColorIndex(slot.altKey||slot.pairKey);
+  }
+  el.className="slot"+(slot.id===selectedSlotId?" selected":"")+(selectedSlotIds.includes(slot.id)?" multi":"")+(slot.type==="ignore"?" ignore":"")+(slot.type==="refOnly"?" refOnly":"")+altColorClass;
   el.dataset.id=slot.id;
   el.style.left=slot.x+"%";
   el.style.top=slot.y+"%";
@@ -343,6 +470,7 @@ function enableDrag(el,slot){
   el.onpointerdown=e=>{
     if(mode!=="edit")return;
     e.stopPropagation();
+    if(e.pointerType==="touch") e.preventDefault();
 
     const isMultiKey = e.ctrlKey || e.metaKey || e.shiftKey || multiSelectMode;
 
@@ -367,6 +495,7 @@ function enableDrag(el,slot){
   };
   el.onpointermove=e=>{
     if(!drag)return;
+    if(e.pointerType==="touch") e.preventDefault();
     let dx=(e.clientX-drag.startX)/drag.rect.width*100;
     let dy=(e.clientY-drag.startY)/drag.rect.height*100;
     if(Math.abs(e.clientX-drag.startX)+Math.abs(e.clientY-drag.startY)>3) drag.moved=true;
@@ -436,9 +565,11 @@ function renderGroupEditor(groupSlots, title="패턴 그룹"){
   props.innerHTML=`<div class="groupBox"><b>${title}</b>
   <div class="field"><label>그룹 이름</label><input id="g_key" value="${esc(key)}" placeholder="예: X접점1"></div>
   <div class="groupTargets">대상: ${groupSlots.map((x,i)=>`${i+1}.${esc(x.label||x.id)}`).join(" / ")}</div>
-  <div class="field"><label>허용 정답</label><textarea id="quickPattern" class="quickPattern" placeholder="31/14&#10;31/86&#10;13/86">${esc(patternsToPrettyText(existing))}</textarea></div>
+  <div class="field"><label>허용 정답 — 한 줄이 한 가지 정답이며 최대 4줄</label><textarea id="quickPattern" class="quickPattern" placeholder="한 자리 번호 4칸: 31/14&#10;두 자리 포함 4칸: 4,10 / 4,10">${esc(patternsToPrettyText(existing))}</textarea></div>
+  <div class="field"><label><input id="g_pairColors" type="checkbox" ${first.altPairColors!==false?"checked":""} style="width:auto;margin-right:7px">정답 패턴별 색상 구분</label></div>
+  <div id="patternFormatHelp" class="small tip">선택한 칸이 8·12·16칸이면 각 줄을 4칸짜리 블록 하나로 저장합니다.<br>한 자리 값은 <b>31/14</b>처럼 입력 가능하고, 10·11 같은 두 자리 값이 하나라도 있으면 <b>4,10 / 4,10</b>처럼 모든 값을 쉼표로 구분하세요.<br>편집·참고모드에서는 줄별로 색상을 구분해 보여주고, 시험모드에서는 입력칸 4개만 남습니다. 입력한 값이 어느 한 줄과 일치하면 정답입니다.</div>
   <div class="rowBtns"><button id="loadCurrentBtn">현재 기본값 추가</button><button id="applyGroupBtn" class="ok">저장</button><button id="ungroupBtn" class="warn">그룹 해제</button></div>
-  <div class="small">4칸=1줄. 8칸=2줄. 시험모드에는 첫 4칸만 보이고, 각 줄 중 하나와 맞으면 정답입니다.</div></div>`;
+  <div class="small">새 그룹은 4칸만 선택해서 만들면 됩니다. 예전에 8칸으로 만든 그룹도 호환되며 시험에서는 앞 4칸만 사용합니다.</div></div>`;
   document.getElementById("loadCurrentBtn").onclick=()=>{
     let q=document.getElementById("quickPattern");
     let line=currentAnswersPretty(groupSlots);
@@ -449,15 +580,19 @@ function renderGroupEditor(groupSlots, title="패턴 그룹"){
     let pats=quickTextToPatternText(document.getElementById("quickPattern").value);
     if(!newKey){alert("그룹 이름을 입력하세요.");return;}
     if(!pats){alert("허용 정답을 한 줄 이상 입력하세요.");return;}
-    let patterns=parseAltPatterns(pats);
+    let checked=validateAltPatternInput(document.getElementById("quickPattern").value, groupSlots.length);
+    if(!checked.ok){alert(checked.message);return;}
+    let patterns=checked.patterns;
+    pats=patterns.map(p=>p.join(',')).join('\n');
     let pm=patternModeFor(groupSlots.length, patterns);
     if(!pm.ok){alert(pm.message);return;}
-    groupSlots.forEach((x,i)=>{x.type="alt"; x.altKey=newKey; x.pairKey=newKey; x.altIndex=i+1; x.altPatterns=pats; x.altVisibleCount=(pm.mode==="blocks4"?4:groupSlots.length);});
+    let pairColors=document.getElementById("g_pairColors").checked;
+    groupSlots.forEach((x,i)=>{x.type="alt"; x.altKey=newKey; x.pairKey=newKey; x.altIndex=i+1; x.altPatterns=pats; x.altVisibleCount=(pm.mode==="legacyAlternatives4"?4:groupSlots.length); x.altPairColors=pairColors;});
     saveAuto(); selectedSlotIds=[]; selectedSlotId=null; render();
   };
   document.getElementById("ungroupBtn").onclick=()=>{
     if(!confirm("이 칸들을 패턴 그룹에서 해제할까요?"))return;
-    groupSlots.forEach(x=>{x.type="normal"; delete x.altKey; delete x.altIndex; delete x.altPatterns; x.pairKey="";});
+    groupSlots.forEach(x=>{x.type="normal"; delete x.altKey; delete x.altIndex; delete x.altPatterns; delete x.altPairColors; x.pairKey="";});
     saveAuto(); selectedSlotIds=[]; selectedSlotId=null; render();
   };
 }
@@ -480,7 +615,7 @@ function bindPatternGroupListButtons(){
   props.querySelectorAll('.deleteGroupBtn').forEach(btn=>btn.onclick=()=>{
     let key=btn.dataset.key;
     if(!confirm(key+' 그룹을 삭제할까요?'))return;
-    getGroupSlots(key).forEach(s=>{s.type='normal'; delete s.altKey; delete s.altIndex; delete s.altPatterns; s.pairKey='';});
+    getGroupSlots(key).forEach(s=>{s.type='normal'; delete s.altKey; delete s.altIndex; delete s.altPatterns; delete s.altPairColors; s.pairKey='';});
     saveAuto(); render();
   });
 }
@@ -488,7 +623,7 @@ function basicSlotForm(s){
   return `<div class="field"><label>라벨</label><input id="p_label" value="${esc(s.label||"")}"></div><div class="inline"><div class="field"><label>X%</label><input id="p_x" type="number" step="0.1" value="${s.x}"></div><div class="field"><label>Y%</label><input id="p_y" type="number" step="0.1" value="${s.y}"></div></div><div class="field"><label>기본 정답</label><input id="p_answer" value="${esc(s.answer||"")}" placeholder="예: 3"></div><div class="field"><label>칸 종류</label><select id="p_type"><option value="normal" ${s.type==="normal"?"selected":""}>일반 채점칸</option><option value="pair" ${s.type==="pair"?"selected":""}>순서무시 묶음</option><option value="refOnly" ${s.type==="refOnly"?"selected":""}>참고모드 전용칸</option><option value="ignore" ${s.type==="ignore"?"selected":""}>무시/채점제외</option><option value="alt" ${s.type==="alt"?"selected":""}>패턴 그룹칸</option></select></div><div class="field"><label>순서무시 묶음 이름</label><input id="p_pair" value="${esc(s.type==="pair"?(s.pairKey||""):"")}" placeholder="예: MC코일"></div><div class="field"><label>메모</label><input id="p_memo" value="${esc(s.memo||"")}"></div><div class="rowBtns"><button id="dupBtn">복제</button><button id="deleteBtn" class="bad">삭제</button></div>`;
 }
 function bindBasicFields(s){
-  bind("p_label",v=>s.label=v); bind("p_x",v=>s.x=+v); bind("p_y",v=>s.y=+v); bind("p_answer",v=>s.answer=v); bind("p_type",v=>{s.type=v; if(v!=="alt"){delete s.altKey; delete s.altIndex; delete s.altPatterns;} }); bind("p_pair",v=>{if(s.type==="pair")s.pairKey=v}); bind("p_memo",v=>s.memo=v);
+  bind("p_label",v=>s.label=v); bind("p_x",v=>s.x=+v); bind("p_y",v=>s.y=+v); bind("p_answer",v=>s.answer=v); bind("p_type",v=>{s.type=v; if(v!=="alt"){delete s.altKey; delete s.altIndex; delete s.altPatterns; delete s.altPairColors;} }); bind("p_pair",v=>{if(s.type==="pair")s.pairKey=v}); bind("p_memo",v=>s.memo=v);
   document.getElementById("dupBtn").onclick=duplicateSlot; document.getElementById("deleteBtn").onclick=deleteSelected;
 }
 function renderProps(){
@@ -583,29 +718,62 @@ function handleSlotKey(e,slot,el){
 }
 
 function slotOrderForAlt(a,b){
-  let ai=Number(a.altIndex||0), bi=Number(b.altIndex||0);
-  if(ai||bi) return (ai||9999)-(bi||9999);
-  return (a.y-b.y)||(a.x-b.x);
+  // altIndex는 “그룹을 만든 선택 순서”라서 2×2 화면 입력 순서와 다를 수 있다.
+  // 다만 4칸씩 묶인 패턴 블록 구분에는 altIndex를 사용하고,
+  // 같은 블록 안에서는 실제 화면 좌표(위→아래, 왼쪽→오른쪽)로 정렬한다.
+  const ai=Number(a.altIndex||0), bi=Number(b.altIndex||0);
+  const ab=ai>0 ? Math.floor((ai-1)/4) : 9999;
+  const bb=bi>0 ? Math.floor((bi-1)/4) : 9999;
+  if(ab!==bb) return ab-bb;
+  return (Number(a.y)-Number(b.y)) || (Number(a.x)-Number(b.x)) || (ai-bi);
+}
+function parseAltPatternLine(line){
+  line=String(line||"").trim();
+  if(!line)return [];
+  const parts=line.split('/').map(x=>x.trim()).filter(Boolean);
+  const hasComma=line.includes(',');
+  let out=[];
+  for(const part of parts){
+    if(hasComma){
+      out.push(...part.split(',').map(norm).filter(Boolean));
+    }else{
+      const compact=norm(part);
+      if(compact) out.push(...compact.split('').map(norm).filter(Boolean));
+    }
+  }
+  return out;
 }
 function parseAltPatterns(text){
-  return String(text||"").split(/[|\n]+/).map(line=>{
-    line=String(line||"").trim();
-    if(!line)return [];
-    // 사람이 보기 쉬운 형식 지원: 31 / 14 / 86 / 13
-    // 내부적으로는 3,1,1,4,8,6,1,3 으로 풀어서 저장/채점한다.
-    if(line.includes('/')){
-      let out=[];
-      line.split('/').forEach(part=>{
-        let t=norm(part);
-        if(!t)return;
-        if(t.includes(',')) out.push(...t.split(',').map(norm).filter(Boolean));
-        else if(t.length>1) out.push(...t.split('').map(norm).filter(Boolean));
-        else out.push(t);
-      });
-      return out;
+  return String(text||"").split(/[|\n]+/).map(parseAltPatternLine).filter(p=>p.length);
+}
+function validateAltPatternInput(text, slotCount){
+  const rawLines=String(text||"").split(/[|\n]+/).map(x=>x.trim()).filter(Boolean);
+  if(!rawLines.length) return {ok:false, message:"허용 정답을 한 줄 이상 입력하세요.", patterns:[]};
+  if(rawLines.length>4) return {ok:false, message:"복수 정답은 최대 4개까지만 입력할 수 있습니다.\n다섯 번째 줄부터 삭제하세요.", patterns:[]};
+
+  const visibleCount=(slotCount===8 ? 4 : slotCount);
+  const patterns=[];
+  for(let i=0;i<rawLines.length;i++){
+    const line=rawLines[i];
+    // 쉼표를 사용한 줄에서는 모든 값이 쉼표로 분리되어야 한다.
+    if(line.includes(',')){
+      const slashParts=line.split('/');
+      for(const part of slashParts){
+        const tokens=part.split(',').map(x=>x.trim());
+        if(tokens.some(x=>!x)) return {ok:false, message:`정답 ${i+1} 형식 오류: 쉼표 사이에 빈 값이 있습니다.`, patterns:[]};
+      }
     }
-    return line.split(/[,\s]+/).map(norm).filter(Boolean);
-  }).filter(p=>p.some(Boolean));
+    const p=parseAltPatternLine(line);
+    const blockMode = slotCount>=4 && slotCount%4===0 && rawLines.length===slotCount/4;
+    const requiredCount = blockMode ? 4 : visibleCount;
+    if(p.length!==requiredCount){
+      return {ok:false, message:blockMode
+        ? `정답 ${i+1}은 4개 값이어야 하지만 ${p.length}개로 해석되었습니다.\n\n현재 ${slotCount}칸이므로 4칸짜리 정답 ${slotCount/4}줄을 입력하세요.`
+        : `정답 ${i+1}은 ${visibleCount}개 값이어야 하지만 ${p.length}개로 해석되었습니다.\n\n한 자리 4칸 예: 31/14\n두 자리 포함 4칸 예: 4,10 / 4,10`, patterns:[]};
+    }
+    patterns.push(p);
+  }
+  return {ok:true, patterns};
 }
 function patternsToPrettyText(text){
   return parseAltPatterns(text).map(formatAltPattern).join("\n");
@@ -619,27 +787,40 @@ function currentAnswersPretty(slots){
 }
 function samePattern(user,pat){
   if(user.length!==pat.length)return false;
-  for(let i=0;i<user.length;i++){ if(user[i]!==pat[i]) return false; }
-  return true;
+
+  // 저장 순서와 화면의 2×2 배치 순서가 다른 기존 데이터도 함께 인정한다.
+  // "13/14"는 저장상 [1,3,1,4]지만 화면을 왼쪽→오른쪽,
+  // 위→아래로 입력하면 [1,1,3,4]가 되므로 두 순서를 모두 정답 처리한다.
+  const exact=user.every((v,i)=>v===pat[i]);
+  if(exact)return true;
+
+  if(user.length===4){
+    const screenOrder=[pat[0],pat[2],pat[1],pat[3]];
+    if(user.every((v,i)=>v===screenOrder[i]))return true;
+  }
+  return false;
 }
 function patternModeFor(slotCount, patterns){
   patterns=patterns||[];
   if(!patterns.length)return {ok:false, mode:"empty", message:"허용 정답을 한 줄 이상 입력하세요."};
-  if(patterns.every(p=>p.length===slotCount)) return {ok:true, mode:"full"};
-  // 사용자가 원한 간단 모드: 선택칸이 8개면 4칸짜리 줄 2개, 12개면 4칸짜리 줄 3개.
-  // 예: 8칸 선택 후 31/14, 13/86 두 줄 입력 = 앞 4칸은 31/14, 뒤 4칸은 13/86.
-  if(slotCount%4===0 && patterns.length===slotCount/4 && patterns.every(p=>p.length===4)) return {ok:true, mode:"blocks4"};
-  return {ok:false, mode:"bad", message:"허용 정답 줄 수/칸 수가 선택한 칸 수와 맞지 않습니다.\n\n선택 4칸: 31/14 한 줄\n선택 8칸: 31/14 처럼 4칸짜리 두 줄\n선택칸 수: "+slotCount+"개"};
+  if(patterns.length>4)return {ok:false, mode:"tooMany", message:"복수 정답은 최대 4개까지만 사용할 수 있습니다."};
+
+  // 4칸짜리 패턴을 여러 줄 등록하고, 선택 슬롯도 4칸씩 묶은 방식.
+  // 예: 12칸 + 3줄(각 4개) = 빨강/초록/보라 3개 블록.
+  if(slotCount>=4 && slotCount%4===0 && patterns.length===slotCount/4 && patterns.every(p=>p.length===4)){
+    return {ok:true, mode:"blocks4"};
+  }
+
+  // 실제 시험 입력칸 전체에 대해 여러 완전한 대체 정답을 등록하는 방식.
+  if(patterns.every(p=>p.length===slotCount)) return {ok:true, mode:"alternatives"};
+
+  // 구버전 호환: 8칸(앞 4칸 표시 + 뒤 4칸 참고용)으로 만든 그룹.
+  if(slotCount===8 && patterns.every(p=>p.length===4)) return {ok:true, mode:"legacyAlternatives4"};
+
+  return {ok:false, mode:"bad", message:"허용 정답의 값 개수가 시험에 표시되는 칸 수와 맞지 않습니다.\n복수 정답은 같은 칸 수의 완전한 정답을 줄마다 하나씩, 최대 4줄 입력하세요."};
 }
 function passPatternSet(user, patterns, mode){
-  if(mode==="full") return patterns.some(p=>samePattern(user,p));
-  if(mode==="blocks4"){
-    for(let r=0;r<patterns.length;r++){
-      let block=user.slice(r*4,r*4+4);
-      if(!samePattern(block,patterns[r])) return false;
-    }
-    return true;
-  }
+  if(mode==="alternatives" || mode==="legacyAlternatives4") return patterns.some(p=>samePattern(user,p));
   return false;
 }
 function expectedPatternText(patterns){
@@ -695,12 +876,19 @@ function checkAnswers(){
     g=g.slice().sort(slotOrderForAlt);
     let patterns=parseAltPatterns(g.find(s=>s.altPatterns)?.altPatterns || "");
     let pm=patternModeFor(g.length, patterns);
-    let visibleCount=(pm.ok && pm.mode==="blocks4") ? 4 : g.length;
+    // 시험모드에서 실제로 화면에 남겨 둔 칸 수와 채점 대상 칸 수를 동일하게 맞춘다.
+    // blocks4 그룹도 대표 4칸만 채점해야 한다.
+    let visibleCount=visibleAltCountForGroup(g);
     let visible=g.slice(0,visibleCount);
     let user=visible.map(s=>norm(inputs[s.id]?.value));
     let pass=false;
-    if(pm.ok && pm.mode==="blocks4") pass=patterns.some(p=>samePattern(user,p));
-    else if(pm.ok) pass=passPatternSet(user, patterns, pm.mode);
+    if(pm.ok){
+      // blocks4도 시험에서는 대표 4칸만 입력하고,
+      // 등록된 여러 4칸 정답 중 하나와 일치하면 정답 처리한다.
+      pass = pm.mode==="blocks4"
+        ? patterns.some(p=>samePattern(user,p))
+        : passPatternSet(user, patterns, pm.mode);
+    }
     if(pass){
       visible.forEach(s=>{inputs[s.id]?.classList.remove("wrong","emptyWrong");inputs[s.id]?.classList.add("correct")});
     }else{
@@ -760,7 +948,23 @@ function setResultMessage(){
 }
 
 document.getElementById("clearMultiBtn").onclick=()=>{selectedSlotIds=[];selectedSlotId=null;multiSelectMode=false;render()}; document.getElementById("deleteMultiBtn").onclick=deleteSelected;
-document.getElementById("exportBtn").onclick=()=>{saveNow(); let blob=new Blob([JSON.stringify(APP_DATA,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="electrician_pin_data_v4.json";a.click();URL.revokeObjectURL(a.href)};
+
+document.getElementById("exportBtn").onclick=()=>{
+  saveNow();
+  const json=JSON.stringify(APP_DATA,null,2);
+  const blob=new Blob([json],{type:"application/json;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  const now=new Date();
+  const pad=n=>String(n).padStart(2,"0");
+  a.href=url;
+  a.download=`pin-trainer-data_${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}_${pad(now.getHours())}${pad(now.getMinutes())}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+
 document.getElementById("importBtn").onclick=()=>document.getElementById("importFile").click();
 document.getElementById("importFile").onchange=e=>{let f=e.target.files[0]; if(!f)return; let r=new FileReader(); r.onload=()=>{try{let p=JSON.parse(r.result); if(!p.circuits)throw Error("circuits 없음"); APP_DATA=p; saveNow(); rebuildSelect(); currentIndex=0; render()}catch(err){alert("불러오기 실패: "+err.message)}}; r.readAsText(f)};
 document.getElementById("refreshJsonBtn").onclick=fillJson;
