@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>전기기능사 실기 핀번호 암기 v4 모바일·정답짝색상</title>
+<title>전기기능사 실기 핀번호 연습</title>
 <style>
 :root{--bg:#0b1020;--panel:#111827;--line:#334155;--text:#e5e7eb;--muted:#94a3b8;--accent:#60a5fa;--ok:#22c55e;--bad:#ef4444;--warn:#f59e0b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -52,7 +52,10 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
 .side{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;max-height:calc(100vh - 104px);overflow:auto}.small{font-size:13px;color:var(--muted);line-height:1.45}.result{padding:10px;border-radius:10px;background:#0b1220;border:1px solid var(--line);margin:10px 0;white-space:pre-wrap}
 .field{margin:9px 0}.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}.field input,.field select,.field textarea{width:100%}.inline{display:grid;grid-template-columns:1fr 1fr;gap:8px}.rowBtns{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.row{padding:8px;border:1px solid var(--line);border-radius:9px;background:#0b1220;margin-top:8px}.badText{color:#fecaca}.okText{color:#bbf7d0}kbd{background:#020617;border:1px solid var(--line);padding:1px 5px;border-radius:5px}textarea.code{font-family:Consolas,monospace;font-size:12px;min-height:180px}
 .toolGrid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0}.toolGrid button{font-size:13px;padding:7px}.tip{border-left:3px solid var(--accent);padding-left:8px;margin:8px 0}.multiList{max-height:110px;overflow:auto;border:1px solid var(--line);border-radius:8px;background:#0b1220;padding:6px;margin:6px 0}
-.altHint{position:absolute;transform:translate(-50%,-100%);z-index:4;max-width:260px;padding:4px 7px;border-radius:7px;border:1px solid #f59e0b;background:rgba(255,247,237,.96);color:#7c2d12;font-weight:800;font-size:11px;line-height:1.3;white-space:normal;text-align:center;pointer-events:none}
+.altHint{display:none;position:absolute;transform:translate(-50%,-100%);z-index:40;max-width:280px;padding:5px 27px 5px 8px;border-radius:7px;border:1px solid #f59e0b;background:rgba(255,247,237,.98);color:#7c2d12;font-weight:800;font-size:11px;line-height:1.3;white-space:normal;text-align:center;pointer-events:auto;box-shadow:0 2px 8px rgba(0,0,0,.28)}
+.altHint.show{display:block}
+.altHintClose{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:20px;height:20px;padding:0;border:0;background:transparent;color:#9a3412;font-size:17px;font-weight:900;line-height:20px;cursor:pointer}
+@media (hover:hover) and (pointer:fine){.altHintClose{display:none}.altHint{padding-right:8px}}
 .patternTable{width:100%;border-collapse:collapse;margin:8px 0;background:#0b1220;border:1px solid var(--line);border-radius:8px;overflow:hidden}.patternTable th,.patternTable td{border:1px solid var(--line);padding:5px;text-align:center}.patternTable th{font-size:12px;color:#bfdbfe;font-weight:800}.patternTable input{width:100%;min-width:44px;text-align:center;padding:6px}.groupBox{border:1px solid #2563eb;border-radius:10px;padding:10px;background:#081225;margin:10px 0}.orderBadge{display:none!important;position:absolute;transform:translate(-50%,-150%);background:#f59e0b;color:#111827;border:2px solid #fff;border-radius:999px;width:18px;height:18px;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;z-index:35;pointer-events:none}.quickPattern{width:100%;min-height:130px;font-family:ui-monospace,Consolas,monospace;resize:both;overflow:auto;line-height:1.45}.patternCard{border:1px solid #334155;border-radius:10px;padding:9px;margin:8px 0;background:#020617}.patternCard b{color:#bfdbfe}.groupTargets{font-size:12px;color:#94a3b8;margin:4px 0 7px}.patternMini{white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;background:#0b1220;border:1px solid #1e293b;border-radius:8px;padding:7px;margin:6px 0;color:#e5e7eb}.patternTable .delRow{min-width:38px;padding:6px}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 7px;margin:2px;font-size:12px;background:#020617}
 
 
@@ -99,7 +102,7 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
 </style>
 </head>
 <body>
-<header><h1>전기기능사 실기 핀번호 암기 v4 패턴목록</h1><div class="toolbar">
+<header><h1>전기기능사 실기 핀번호 연습</h1><div class="toolbar">
 <button data-mode="edit" class="modeBtn active">편집모드</button><button data-mode="exam" class="modeBtn">시험모드</button><button data-mode="ref" class="modeBtn">참고모드</button>
 <select id="circuitSelect"></select><button id="labelBtn">라벨 표시</button><button id="zoomOutBtn">-</button><button id="zoomInBtn">+</button><button id="resetZoomBtn">100%</button>
 <button id="exportBtn" class="ok">데이터 내보내기</button><button id="importBtn" class="warn">데이터 불러오기</button><button id="resetDataBtn" class="bad">내장 데이터로 초기화</button><input id="importFile" type="file" accept=".json" style="display:none">
@@ -451,19 +454,82 @@ function formatAltPattern(p){
 function renderAltHints(){
   let groups={};
   (current().slots||[]).filter(s=>s.type==="alt"&&(s.altKey||s.pairKey)).forEach(s=>{(groups[s.altKey||s.pairKey] ||= []).push(s)});
+
+  const finePointer=window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+  let hideTimer=null;
+
+  function closeAll(except=null){
+    wrap.querySelectorAll(".altHint.show").forEach(h=>{
+      if(h!==except) h.classList.remove("show");
+    });
+  }
+
   Object.entries(groups).forEach(([key,g])=>{
     g=g.slice().sort(slotOrderForAlt);
     let patterns=parseAltPatterns(g.find(s=>s.altPatterns)?.altPatterns || "");
     if(!patterns.length)return;
+
     let x=g.reduce((a,s)=>a+s.x,0)/g.length;
     let y=Math.min(...g.map(s=>s.y))-2.4;
     let hint=document.createElement("div");
     hint.className="altHint";
+    hint.dataset.altKey=key;
     hint.style.left=x+"%";
     hint.style.top=y+"%";
-    hint.textContent=`${key}: `+patterns.map(formatAltPattern).join("  |  ");
+
+    let label=document.createElement("span");
+    label.textContent=`${key}: `+patterns.map(formatAltPattern).join("  |  ");
+    hint.appendChild(label);
+
+    let close=document.createElement("button");
+    close.type="button";
+    close.className="altHintClose";
+    close.setAttribute("aria-label","패턴 안내 닫기");
+    close.textContent="×";
+    close.onclick=e=>{
+      e.preventDefault();
+      e.stopPropagation();
+      hint.classList.remove("show");
+    };
+    hint.appendChild(close);
     wrap.appendChild(hint);
+
+    const groupEls=g.map(s=>slotElMap.get(s.id)).filter(Boolean);
+
+    if(finePointer){
+      const show=()=>{
+        clearTimeout(hideTimer);
+        closeAll(hint);
+        hint.classList.add("show");
+      };
+      const scheduleHide=()=>{
+        clearTimeout(hideTimer);
+        hideTimer=setTimeout(()=>hint.classList.remove("show"),120);
+      };
+      groupEls.forEach(el=>{
+        el.addEventListener("mouseenter",show);
+        el.addEventListener("mouseleave",scheduleHide);
+      });
+      hint.addEventListener("mouseenter",()=>clearTimeout(hideTimer));
+      hint.addEventListener("mouseleave",scheduleHide);
+    }else{
+      groupEls.forEach(el=>{
+        el.addEventListener("click",e=>{
+          e.preventDefault();
+          e.stopPropagation();
+          const willShow=!hint.classList.contains("show");
+          closeAll(hint);
+          hint.classList.toggle("show",willShow);
+        });
+      });
+    }
   });
+
+  if(!finePointer){
+    wrap.addEventListener("click",e=>{
+      if(!e.target.closest(".altHint") && !e.target.closest(".slot")) closeAll();
+    });
+  }
 }
 
 function enableDrag(el,slot){
