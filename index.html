@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>전기기능사 실기 핀번호 연습</title>
+<title>전기기능사 실기 핀번호 암기 v4 모바일·정답짝색상</title>
 <style>
 :root{--bg:#0b1020;--panel:#111827;--line:#334155;--text:#e5e7eb;--muted:#94a3b8;--accent:#60a5fa;--ok:#22c55e;--bad:#ef4444;--warn:#f59e0b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
@@ -75,7 +75,7 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
   body.mobileRef .side{display:none!important;}
   .canvasWrap{border-radius:0;}
   .canvasWrap img{border-radius:0;}
-  .slot{width:28px; height:26px; font-size:14px; border-width:2px; border-radius:6px; touch-action:none;}
+  .slot{width:22px;height:20px;font-size:12px;border-width:2px;border-radius:5px;touch-action:none;}
   .markerLabel{font-size:10px;}
   .toolGrid{grid-template-columns:1fr 1fr;}
   input,select,textarea,button{font-size:16px;}
@@ -99,7 +99,7 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:14px;padding:14p
 </style>
 </head>
 <body>
-<header><h1>전기기능사 실기 핀번호 연습</h1><div class="toolbar">
+<header><h1>전기기능사 실기 핀번호 암기 v4 패턴목록</h1><div class="toolbar">
 <button data-mode="edit" class="modeBtn active">편집모드</button><button data-mode="exam" class="modeBtn">시험모드</button><button data-mode="ref" class="modeBtn">참고모드</button>
 <select id="circuitSelect"></select><button id="labelBtn">라벨 표시</button><button id="zoomOutBtn">-</button><button id="zoomInBtn">+</button><button id="resetZoomBtn">100%</button>
 <button id="exportBtn" class="ok">데이터 내보내기</button><button id="importBtn" class="warn">데이터 불러오기</button><button id="resetDataBtn" class="bad">내장 데이터로 초기화</button><input id="importFile" type="file" accept=".json" style="display:none">
