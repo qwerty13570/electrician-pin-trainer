@@ -520,7 +520,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 1,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -534,7 +534,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 2,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -703,9 +703,13 @@
           "x": 90.08,
           "y": 28.44,
           "answer": "4",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 1,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "slot_mrbxlojc_v7u",
@@ -713,9 +717,13 @@
           "x": 90.08,
           "y": 32.64,
           "answer": "10",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 2,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "slot_mrbxlqpc_2q3",
@@ -723,9 +731,13 @@
           "x": 84.92,
           "y": 28.9,
           "answer": "4",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 3,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "slot_mrbxlqpc_5xz",
@@ -733,9 +745,13 @@
           "x": 84.92,
           "y": 33.1,
           "answer": "10",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 4,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "slot_mrc153nz_dqs",
@@ -748,7 +764,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 3,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -762,7 +778,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 4,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -826,7 +842,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 5,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -840,7 +856,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 6,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -854,7 +870,7 @@
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 7,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
           "altVisibleCount": 4
         },
         {
@@ -862,13 +878,69 @@
           "label": "접점 하",
           "x": 67.5,
           "y": 58.46,
-          "answer": "6",
+          "answer": "5",
           "type": "alt",
           "pairKey": "패턴1",
           "memo": "",
           "altKey": "패턴1",
           "altIndex": 8,
-          "altPatterns": "3,1,1,4\n1,3,8,6",
+          "altPatterns": "3,1,1,4\n1,3,8,5",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8k4ir_zxn",
+          "label": "접점 상",
+          "x": 92.42,
+          "y": 28.44,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 5,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8k4ir_fv2",
+          "label": "접점 하",
+          "x": 92.42,
+          "y": 32.64,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 6,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8k5iq_vg7",
+          "label": "접점 상",
+          "x": 87.17,
+          "y": 28.79,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 7,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8k5iq_olj",
+          "label": "접점 하",
+          "x": 87.17,
+          "y": 32.99,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 8,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
           "altVisibleCount": 4
         }
       ]
@@ -1397,9 +1469,13 @@
           "x": 67.79,
           "y": 44.35,
           "answer": "8",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 1,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
         },
         {
           "id": "x_contact_b",
@@ -1407,9 +1483,13 @@
           "x": 67.79,
           "y": 49.05,
           "answer": "6",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 2,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
         },
         {
           "id": "t_contact_a",
@@ -1417,9 +1497,13 @@
           "x": 72.62,
           "y": 27.73,
           "answer": "1",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 3,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
         },
         {
           "id": "t_contact_b",
@@ -1427,9 +1511,13 @@
           "x": 72.62,
           "y": 32.53,
           "answer": "3",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 4,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
         },
         {
           "id": "fr_coil_top",
@@ -1577,9 +1665,13 @@
           "x": 82.78,
           "y": 28.02,
           "answer": "4",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 1,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "mc1_contact_b",
@@ -1587,9 +1679,13 @@
           "x": 82.78,
           "y": 32.82,
           "answer": "10",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 2,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "mc2_contact_a",
@@ -1597,9 +1693,13 @@
           "x": 87.58,
           "y": 28.02,
           "answer": "4",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 3,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "mc2_contact_b",
@@ -1607,9 +1707,13 @@
           "x": 87.58,
           "y": 32.82,
           "answer": "10",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 4,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         },
         {
           "id": "slot_mrbxpd00_y2v",
@@ -1650,6 +1754,118 @@
           "type": "normal",
           "pairKey": "",
           "memo": ""
+        },
+        {
+          "id": "slot_mrx8hlbf_jg6",
+          "label": "접점 상",
+          "x": 70,
+          "y": 44.36,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 5,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8hlbf_xwd",
+          "label": "접점 하",
+          "x": 70,
+          "y": 48.56,
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 6,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8hmoa_725",
+          "label": "접점 상",
+          "x": 74.75,
+          "y": 28.2,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 7,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8hmoa_jiy",
+          "label": "접점 하",
+          "x": 74.75,
+          "y": 32.4,
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 8,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8ramj_skc",
+          "label": "코일 상",
+          "x": 85.42,
+          "y": 27.43,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 5,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8ramj_rwp",
+          "label": "코일 하",
+          "x": 85.42,
+          "y": 32.63,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 6,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8rbfe_kkw",
+          "label": "코일 상",
+          "x": 91.5,
+          "y": 27.78,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 7,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
+        },
+        {
+          "id": "slot_mrx8rbfe_s8b",
+          "label": "코일 하",
+          "x": 91.5,
+          "y": 32.98,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴2",
+          "memo": "",
+          "altKey": "패턴2",
+          "altIndex": 8,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4
         }
       ]
     },
@@ -1666,7 +1882,7 @@
           "label": "MCCB 1",
           "x": 8.68,
           "y": 29.43,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1676,7 +1892,7 @@
           "label": "MCCB 2",
           "x": 11.23,
           "y": 29.43,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1686,17 +1902,7 @@
           "label": "MCCB 3",
           "x": 13.78,
           "y": 29.43,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mccb_4",
-          "label": "MCCB 4",
-          "x": 8.68,
-          "y": 33.43,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1706,7 +1912,7 @@
           "label": "MCCB 5",
           "x": 11.23,
           "y": 33.43,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1716,7 +1922,7 @@
           "label": "MCCB 6",
           "x": 13.78,
           "y": 33.43,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1726,7 +1932,7 @@
           "label": "EOCR_MAIN 1",
           "x": 8.43,
           "y": 38.52,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1736,7 +1942,7 @@
           "label": "EOCR_MAIN 2",
           "x": 10.98,
           "y": 38.52,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1746,7 +1952,7 @@
           "label": "EOCR_MAIN 3",
           "x": 13.53,
           "y": 38.52,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1756,7 +1962,7 @@
           "label": "EOCR_MAIN 4",
           "x": 8.43,
           "y": 43.5,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1766,7 +1972,7 @@
           "label": "EOCR_MAIN 5",
           "x": 10.98,
           "y": 43.5,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1776,7 +1982,7 @@
           "label": "EOCR_MAIN 6",
           "x": 13.53,
           "y": 43.5,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1786,7 +1992,7 @@
           "label": "MC1_MAIN 1",
           "x": 8.26,
           "y": 50.31,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1796,7 +2002,7 @@
           "label": "MC1_MAIN 2",
           "x": 10.81,
           "y": 50.31,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1806,7 +2012,7 @@
           "label": "MC1_MAIN 3",
           "x": 13.36,
           "y": 50.31,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1816,7 +2022,7 @@
           "label": "MC1_MAIN 4",
           "x": 8.26,
           "y": 54.21,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1826,7 +2032,7 @@
           "label": "MC1_MAIN 5",
           "x": 10.81,
           "y": 54.21,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1836,7 +2042,7 @@
           "label": "MC1_MAIN 6",
           "x": 13.36,
           "y": 54.21,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1846,7 +2052,7 @@
           "label": "MC2 주접점 1",
           "x": 19.66,
           "y": 50.55,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1856,7 +2062,7 @@
           "label": "MC2 주접점 2",
           "x": 22.26,
           "y": 50.55,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1866,7 +2072,7 @@
           "label": "MC2 주접점 3",
           "x": 24.76,
           "y": 50.55,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1876,7 +2082,7 @@
           "label": "MC2 주접점 4",
           "x": 19.66,
           "y": 54.45,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1886,7 +2092,7 @@
           "label": "MC2 주접점 5",
           "x": 22.26,
           "y": 54.45,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1896,7 +2102,7 @@
           "label": "MC2 주접점 6",
           "x": 24.76,
           "y": 54.45,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1906,7 +2112,7 @@
           "label": "EOCR 상단 좌",
           "x": 35.85,
           "y": 28.4,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1916,7 +2122,7 @@
           "label": "EOCR 상단 우",
           "x": 38.85,
           "y": 28.4,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1926,7 +2132,7 @@
           "label": "EOCR 보조접점 상",
           "x": 36.87,
           "y": 50.65,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1936,7 +2142,7 @@
           "label": "EOCR 보조접점 하",
           "x": 36.87,
           "y": 54.65,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1946,7 +2152,7 @@
           "label": "EOCR 코일 상",
           "x": 33.64,
           "y": 62.68,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1956,7 +2162,7 @@
           "label": "EOCR 코일 하",
           "x": 33.64,
           "y": 68.28,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1966,7 +2172,7 @@
           "label": "YL 상",
           "x": 38.57,
           "y": 62.56,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1976,7 +2182,7 @@
           "label": "YL 하",
           "x": 38.57,
           "y": 68.16,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1986,7 +2192,7 @@
           "label": "BZ 상",
           "x": 43.37,
           "y": 62.56,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -1996,137 +2202,7 @@
           "label": "BZ 하",
           "x": 43.37,
           "y": 68.16,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fls_coil_top",
-          "label": "FLS 상",
-          "x": 58.77,
-          "y": 40.16,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fls_coil_bottom",
-          "label": "FLS 하",
-          "x": 58.77,
-          "y": 45.76,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "tb4_e1",
-          "label": "TB4 E1",
-          "x": 63.35,
-          "y": 76.62,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "tb4_e2",
-          "label": "TB4 E2",
-          "x": 64.85,
-          "y": 76.62,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "tb4_e3",
-          "label": "TB4 E3",
-          "x": 66.35,
-          "y": 76.62,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mc1_coil_top",
-          "label": "MC1 상",
-          "x": 47.47,
-          "y": 63.03,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mc1_coil_bottom",
-          "label": "MC1 하",
-          "x": 47.47,
-          "y": 68.63,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mc2_coil_top",
-          "label": "MC2 상",
-          "x": 61.52,
-          "y": 62.56,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mc2_coil_bottom",
-          "label": "MC2 하",
-          "x": 61.52,
-          "y": 68.16,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_coil_top",
-          "label": "FR 상",
-          "x": 52.27,
-          "y": 62.68,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_coil_bottom",
-          "label": "FR 하",
-          "x": 52.27,
-          "y": 68.28,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fls2_coil_top",
-          "label": "FLS 상",
-          "x": 56.95,
-          "y": 62.8,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fls2_coil_bottom",
-          "label": "FLS 하",
-          "x": 56.95,
-          "y": 68.4,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2136,7 +2212,7 @@
           "label": "T 상",
           "x": 76.83,
           "y": 46.17,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2146,7 +2222,7 @@
           "label": "T 하",
           "x": 76.83,
           "y": 51.77,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2156,7 +2232,7 @@
           "label": "X 상",
           "x": 74.97,
           "y": 62.91,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2166,7 +2242,7 @@
           "label": "X 하",
           "x": 74.97,
           "y": 68.51,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2176,7 +2252,7 @@
           "label": "RL 상",
           "x": 79.67,
           "y": 63.03,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2186,7 +2262,7 @@
           "label": "RL 하",
           "x": 79.67,
           "y": 68.63,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2196,7 +2272,7 @@
           "label": "GL 상",
           "x": 84.67,
           "y": 63.03,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2206,17 +2282,7 @@
           "label": "GL 하",
           "x": 84.67,
           "y": 68.63,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "x_contact_l_a",
-          "label": "X 좌접점 상",
-          "x": 58.85,
-          "y": 30.26,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2226,27 +2292,7 @@
           "label": "FLS 접점 상",
           "x": 50.75,
           "y": 30.31,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fls_contact_b",
-          "label": "FLS 접점 하",
-          "x": 50.75,
-          "y": 35.51,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "ss_a_a",
-          "label": "SS A 상",
-          "x": 68.75,
-          "y": 30.72,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2254,9 +2300,9 @@
         {
           "id": "ss_m_a",
           "label": "SS M 상",
-          "x": 72,
-          "y": 36.5,
-          "answer": "",
+          "x": 72.17,
+          "y": 37.32,
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2266,7 +2312,7 @@
           "label": "SS M 하",
           "x": 72,
           "y": 41.5,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2276,7 +2322,7 @@
           "label": "PB0 상",
           "x": 72.58,
           "y": 47.21,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2286,27 +2332,7 @@
           "label": "PB0 하",
           "x": 72.58,
           "y": 51.41,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "pb1_a",
-          "label": "PB1 상",
-          "x": 70.58,
-          "y": 63.21,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "pb1_b",
-          "label": "PB1 하",
-          "x": 70.58,
-          "y": 68.01,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2316,67 +2342,67 @@
           "label": "MC1 접점 상",
           "x": 81.83,
           "y": 30.73,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 1,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "mc1_contact_b",
           "label": "MC1 접점 하",
           "x": 81.83,
           "y": 35.53,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 2,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "mc2_contact_a",
           "label": "MC2 접점 상",
           "x": 86.83,
           "y": 30.73,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 3,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "mc2_contact_b",
           "label": "MC2 접점 하",
           "x": 86.83,
           "y": 35.53,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_l_a",
-          "label": "FR 좌접점 상",
-          "x": 45.97,
-          "y": 56.37,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_l_b",
-          "label": "FR 좌접점 하",
-          "x": 45.97,
-          "y": 60.87,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 4,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "slot_mrbxr3t5_k94",
           "label": "+",
           "x": 23.83,
           "y": 32.97,
-          "answer": "",
+          "answer": "+",
           "type": "pair",
           "pairKey": "PM",
           "memo": ""
@@ -2386,7 +2412,7 @@
           "label": "-",
           "x": 23.58,
           "y": 37.93,
-          "answer": "",
+          "answer": "-",
           "type": "pair",
           "pairKey": "PM",
           "memo": ""
@@ -2396,7 +2422,7 @@
           "label": "접점 상",
           "x": 77.33,
           "y": 57.09,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2406,27 +2432,297 @@
           "label": "접점 하",
           "x": 77.33,
           "y": 61.29,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
         },
         {
-          "id": "slot_mrc17btz_iky",
+          "id": "slot_mrx8slsz_mrk",
+          "label": "칸 77",
+          "x": 8.83,
+          "y": 33.6,
+          "answer": "4",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx8tc8b_dci",
+          "label": "칸 77",
+          "x": 58.25,
+          "y": 30.66,
+          "answer": "s",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx8tiln_tn5",
+          "label": "칸 77",
+          "x": 50.75,
+          "y": 34.66,
+          "answer": "3",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx8ttqj_i6v",
+          "label": "칸 77",
+          "x": 69.75,
+          "y": 31.01,
+          "answer": "s",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9cf6r_7za",
+          "label": "코일 상",
+          "x": 88.5,
+          "y": 30.61,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 5,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9cf6r_59w",
+          "label": "코일 하",
+          "x": 88.5,
+          "y": 35.81,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 6,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9cgln_xr5",
+          "label": "코일 상",
+          "x": 78.75,
+          "y": 30.5,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 7,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9cgln_uou",
+          "label": "코일 하",
+          "x": 78.75,
+          "y": 35.7,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 8,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9ehnf_n3s",
+          "label": "칸 81",
+          "x": 54.08,
+          "y": 56.83,
+          "answer": "8",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9f52z_03m",
+          "label": "코일 상",
+          "x": 70.67,
+          "y": 62.92,
+          "answer": "2",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9f52z_203",
+          "label": "코일 하",
+          "x": 70.67,
+          "y": 68.12,
+          "answer": "7",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9fpg3_082",
+          "label": "코일 상",
+          "x": 61.17,
+          "y": 62.92,
+          "answer": "5",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9fpg3_evx",
+          "label": "코일 하",
+          "x": 61.17,
+          "y": 68.12,
+          "answer": "6",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9fq1v_8wy",
+          "label": "코일 상",
+          "x": 56.67,
+          "y": 62.8,
+          "answer": "2",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9fq1v_kn1",
+          "label": "코일 하",
+          "x": 56.67,
+          "y": 68,
+          "answer": "7",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9fqtn_8ge",
+          "label": "코일 상",
+          "x": 51.92,
+          "y": 63.16,
+          "answer": "6",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9fqtn_nyt",
+          "label": "코일 하",
+          "x": 51.92,
+          "y": 68.36,
+          "answer": "12",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9frbn_zcu",
+          "label": "코일 상",
+          "x": 47.58,
+          "y": 62.92,
+          "answer": "6",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9frbn_xpj",
+          "label": "코일 하",
+          "x": 47.58,
+          "y": 68.12,
+          "answer": "12",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9g80b_qdg",
           "label": "접점 상",
-          "x": 54.25,
-          "y": 56.85,
-          "answer": "",
+          "x": 49.08,
+          "y": 56.62,
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
         },
         {
-          "id": "slot_mrc17btz_ynf",
+          "id": "slot_mrx9g80b_i0r",
           "label": "접점 하",
-          "x": 54.25,
-          "y": 61.05,
-          "answer": "",
+          "x": 49.08,
+          "y": 60.82,
+          "answer": "5",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9g917_i4y",
+          "label": "접점 상",
+          "x": 58.92,
+          "y": 40.23,
+          "answer": "3",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9g917_odb",
+          "label": "접점 하",
+          "x": 58.92,
+          "y": 44.43,
+          "answer": "4",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9grl7_24m",
+          "label": "칸 78",
+          "x": 54.17,
+          "y": 61.32,
+          "answer": "6",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9gxpv_17d",
+          "label": "칸 79",
+          "x": 63.09,
+          "y": 76.64,
+          "answer": "7",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9gyp7_a45",
+          "label": "칸 80",
+          "x": 65.16,
+          "y": 76.64,
+          "answer": "8",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9h0lf_1bl",
+          "label": "칸 81",
+          "x": 66.92,
+          "y": 76.53,
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2446,7 +2742,7 @@
           "label": "MCCB 1",
           "x": 8.35,
           "y": 27.18,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2456,7 +2752,7 @@
           "label": "MCCB 2",
           "x": 10.9,
           "y": 27.18,
-          "answer": "data",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2466,7 +2762,7 @@
           "label": "MCCB 3",
           "x": 13.45,
           "y": 27.18,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2476,7 +2772,7 @@
           "label": "MCCB 4",
           "x": 8.35,
           "y": 31.18,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2486,7 +2782,7 @@
           "label": "MCCB 5",
           "x": 10.9,
           "y": 31.18,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2496,7 +2792,7 @@
           "label": "MCCB 6",
           "x": 13.45,
           "y": 31.18,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2506,7 +2802,7 @@
           "label": "EOCR_MAIN 1",
           "x": 8.43,
           "y": 37.22,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2516,7 +2812,7 @@
           "label": "EOCR_MAIN 2",
           "x": 10.98,
           "y": 37.22,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2526,7 +2822,7 @@
           "label": "EOCR_MAIN 3",
           "x": 13.53,
           "y": 37.22,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2536,7 +2832,7 @@
           "label": "EOCR_MAIN 4",
           "x": 8.43,
           "y": 41.02,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2546,7 +2842,7 @@
           "label": "EOCR_MAIN 5",
           "x": 10.98,
           "y": 41.02,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2556,7 +2852,7 @@
           "label": "EOCR_MAIN 6",
           "x": 13.53,
           "y": 41.02,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2566,7 +2862,7 @@
           "label": "MC1_MAIN 1",
           "x": 8.27,
           "y": 48.42,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2576,7 +2872,7 @@
           "label": "MC1_MAIN 2",
           "x": 10.82,
           "y": 48.42,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2586,7 +2882,7 @@
           "label": "MC1_MAIN 3",
           "x": 13.37,
           "y": 48.42,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2596,7 +2892,7 @@
           "label": "MC1_MAIN 4",
           "x": 8.27,
           "y": 52.32,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2606,7 +2902,7 @@
           "label": "MC1_MAIN 5",
           "x": 10.82,
           "y": 52.32,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2616,7 +2912,7 @@
           "label": "MC1_MAIN 6",
           "x": 13.37,
           "y": 52.32,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2626,7 +2922,7 @@
           "label": "MC2 주접점 1",
           "x": 19.67,
           "y": 48.42,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2636,7 +2932,7 @@
           "label": "MC2 주접점 2",
           "x": 22.27,
           "y": 48.42,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2646,7 +2942,7 @@
           "label": "MC2 주접점 3",
           "x": 24.77,
           "y": 48.42,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2656,7 +2952,7 @@
           "label": "MC2 주접점 4",
           "x": 19.67,
           "y": 52.32,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2666,7 +2962,7 @@
           "label": "MC2 주접점 5",
           "x": 22.27,
           "y": 52.32,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2676,7 +2972,7 @@
           "label": "MC2 주접점 6",
           "x": 24.77,
           "y": 52.32,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2686,7 +2982,7 @@
           "label": "FUSE 갈 +",
           "x": 23.83,
           "y": 31.43,
-          "answer": "",
+          "answer": "+",
           "type": "pair",
           "pairKey": "FUSE",
           "memo": ""
@@ -2696,7 +2992,7 @@
           "label": "FUSE 회 -",
           "x": 23.83,
           "y": 35.43,
-          "answer": "+",
+          "answer": "-",
           "type": "pair",
           "pairKey": "FUSE",
           "memo": ""
@@ -2706,7 +3002,7 @@
           "label": "EOCR 상단 좌",
           "x": 35.68,
           "y": 28.16,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2716,7 +3012,7 @@
           "label": "EOCR 상단 우",
           "x": 38.68,
           "y": 28.16,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2726,7 +3022,7 @@
           "label": "EOCR 보조접점 상",
           "x": 37.04,
           "y": 48.3,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2736,7 +3032,7 @@
           "label": "EOCR 보조접점 하",
           "x": 37.04,
           "y": 52.3,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2746,7 +3042,7 @@
           "label": "EOCR 코일 상",
           "x": 33.63,
           "y": 60.68,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2756,7 +3052,7 @@
           "label": "EOCR 코일 하",
           "x": 33.63,
           "y": 66.28,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2766,7 +3062,7 @@
           "label": "YL 상",
           "x": 38.4,
           "y": 60.56,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2776,7 +3072,7 @@
           "label": "YL 하",
           "x": 38.4,
           "y": 66.16,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2786,7 +3082,7 @@
           "label": "BZ 상",
           "x": 43.2,
           "y": 60.56,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2796,7 +3092,7 @@
           "label": "BZ 하",
           "x": 43.2,
           "y": 66.16,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2806,7 +3102,7 @@
           "label": "FLS 상",
           "x": 47.52,
           "y": 60.56,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2816,7 +3112,7 @@
           "label": "FLS 하",
           "x": 47.52,
           "y": 66.16,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2826,7 +3122,7 @@
           "label": "TB4 E1",
           "x": 49.43,
           "y": 74.73,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2836,7 +3132,7 @@
           "label": "TB4 E2",
           "x": 50.93,
           "y": 74.73,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2846,7 +3142,7 @@
           "label": "TB4 E3",
           "x": 52.43,
           "y": 74.73,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2856,7 +3152,7 @@
           "label": "FR 상",
           "x": 63.27,
           "y": 44.4,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2866,17 +3162,7 @@
           "label": "FR 하",
           "x": 63.27,
           "y": 50,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "x_coil_top",
-          "label": "X 상",
-          "x": 67.38,
-          "y": 44.4,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2886,17 +3172,22 @@
           "label": "X 하",
           "x": 67.38,
           "y": 50,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 1,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "t_coil_top",
           "label": "T 상",
           "x": 61.25,
           "y": 60.44,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2906,7 +3197,7 @@
           "label": "T 하",
           "x": 61.25,
           "y": 66.04,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2916,7 +3207,7 @@
           "label": "MC1 상",
           "x": 70.23,
           "y": 60.44,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2926,7 +3217,7 @@
           "label": "MC1 하",
           "x": 70.23,
           "y": 66.04,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2936,7 +3227,7 @@
           "label": "MC2 상",
           "x": 74.98,
           "y": 60.32,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2946,7 +3237,7 @@
           "label": "MC2 하",
           "x": 74.98,
           "y": 65.92,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2956,7 +3247,7 @@
           "label": "RL 상",
           "x": 83.83,
           "y": 60.32,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2966,7 +3257,7 @@
           "label": "RL 하",
           "x": 83.83,
           "y": 65.92,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2976,7 +3267,7 @@
           "label": "GL 상",
           "x": 88.83,
           "y": 60.32,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2986,7 +3277,7 @@
           "label": "GL 하",
           "x": 88.83,
           "y": 65.92,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -2996,7 +3287,7 @@
           "label": "SS A 상",
           "x": 58.12,
           "y": 28.25,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3006,7 +3297,7 @@
           "label": "SS M 상",
           "x": 63.02,
           "y": 28.25,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3016,7 +3307,7 @@
           "label": "PB0 상",
           "x": 62.52,
           "y": 35.3,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3026,7 +3317,7 @@
           "label": "PB0 하",
           "x": 62.52,
           "y": 39.5,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3036,7 +3327,7 @@
           "label": "PB1 상",
           "x": 56.6,
           "y": 60.64,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3046,7 +3337,7 @@
           "label": "PB1 하",
           "x": 56.6,
           "y": 66.04,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3056,7 +3347,7 @@
           "label": "FLS 접점 상",
           "x": 58.53,
           "y": 44.5,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3066,7 +3357,7 @@
           "label": "FLS 접점 하",
           "x": 58.53,
           "y": 49.7,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3076,27 +3367,37 @@
           "label": "X 접점 상",
           "x": 72.12,
           "y": 28.55,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 2,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "x_contact_b",
           "label": "X 접점 하",
           "x": 72.12,
           "y": 33.35,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 3,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "fr_l_a",
           "label": "FR 좌접점 상",
           "x": 71.93,
           "y": 45.18,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3106,7 +3407,7 @@
           "label": "FR 좌접점 하",
           "x": 71.93,
           "y": 49.68,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3116,7 +3417,7 @@
           "label": "FR 우접점 상",
           "x": 76.84,
           "y": 44.83,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3126,7 +3427,7 @@
           "label": "FR 우접점 하",
           "x": 76.84,
           "y": 49.33,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3136,7 +3437,7 @@
           "label": "T 접점 상",
           "x": 73.55,
           "y": 54.44,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3146,7 +3447,7 @@
           "label": "MC1 접점 상",
           "x": 86.4,
           "y": 28.49,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3156,7 +3457,7 @@
           "label": "MC1 접점 하",
           "x": 86.4,
           "y": 33.29,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3166,7 +3467,7 @@
           "label": "MC2 접점 상",
           "x": 91.4,
           "y": 28.49,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3176,7 +3477,7 @@
           "label": "MC2 접점 하",
           "x": 91.4,
           "y": 33.29,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3186,7 +3487,7 @@
           "label": "코일 상",
           "x": 79.42,
           "y": 60.57,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3196,7 +3497,7 @@
           "label": "코일 하",
           "x": 79.42,
           "y": 65.77,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3206,10 +3507,85 @@
           "label": "칸 77",
           "x": 73.57,
           "y": 58.25,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
+        },
+        {
+          "id": "slot_mrx9jzvf_kfz",
+          "label": "칸 77",
+          "x": 67.42,
+          "y": 44.92,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 4,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9k6hv_lk2",
+          "label": "접점 상",
+          "x": 74.08,
+          "y": 28.56,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 5,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9k6hv_srs",
+          "label": "접점 하",
+          "x": 74.08,
+          "y": 32.76,
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 6,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9k7jf_y0k",
+          "label": "접점 상",
+          "x": 69.09,
+          "y": 44.71,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 7,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9k7jf_qi8",
+          "label": "접점 하",
+          "x": 69.25,
+          "y": 49.73,
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 8,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         }
       ]
     },
@@ -3226,7 +3602,7 @@
           "label": "MCCB 1",
           "x": 8.18,
           "y": 28.37,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3236,7 +3612,7 @@
           "label": "MCCB 2",
           "x": 10.73,
           "y": 28.37,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3246,7 +3622,7 @@
           "label": "MCCB 3",
           "x": 13.28,
           "y": 28.37,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3256,7 +3632,7 @@
           "label": "MCCB 4",
           "x": 8.18,
           "y": 32.37,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3266,17 +3642,7 @@
           "label": "MCCB 5",
           "x": 10.73,
           "y": 32.37,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mccb_6",
-          "label": "MCCB 6",
-          "x": 13.28,
-          "y": 32.37,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3286,7 +3652,7 @@
           "label": "EOCR_MAIN 1",
           "x": 8.1,
           "y": 38.87,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3296,7 +3662,7 @@
           "label": "EOCR_MAIN 2",
           "x": 10.65,
           "y": 38.87,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3306,7 +3672,7 @@
           "label": "EOCR_MAIN 3",
           "x": 13.2,
           "y": 38.87,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3316,7 +3682,7 @@
           "label": "EOCR_MAIN 4",
           "x": 8.1,
           "y": 42.67,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3326,7 +3692,7 @@
           "label": "EOCR_MAIN 5",
           "x": 10.65,
           "y": 42.67,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3336,7 +3702,7 @@
           "label": "EOCR_MAIN 6",
           "x": 13.2,
           "y": 42.67,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3346,7 +3712,7 @@
           "label": "MC1_MAIN 1",
           "x": 8.1,
           "y": 50.08,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3356,7 +3722,7 @@
           "label": "MC1_MAIN 2",
           "x": 10.65,
           "y": 50.08,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3366,7 +3732,7 @@
           "label": "MC1_MAIN 3",
           "x": 13.2,
           "y": 50.08,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3376,7 +3742,7 @@
           "label": "MC1_MAIN 4",
           "x": 8.1,
           "y": 53.98,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3386,7 +3752,7 @@
           "label": "MC1_MAIN 5",
           "x": 10.65,
           "y": 53.98,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3396,7 +3762,7 @@
           "label": "MC1_MAIN 6",
           "x": 13.2,
           "y": 53.98,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3406,7 +3772,7 @@
           "label": "MC2 주접점 1",
           "x": 19.75,
           "y": 50.08,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3416,7 +3782,7 @@
           "label": "MC2 주접점 2",
           "x": 22.35,
           "y": 50.08,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3426,7 +3792,7 @@
           "label": "MC2 주접점 3",
           "x": 24.85,
           "y": 50.08,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3436,7 +3802,7 @@
           "label": "MC2 주접점 4",
           "x": 19.75,
           "y": 53.98,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3446,7 +3812,7 @@
           "label": "MC2 주접점 5",
           "x": 22.35,
           "y": 53.98,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3456,7 +3822,7 @@
           "label": "MC2 주접점 6",
           "x": 24.85,
           "y": 53.98,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3466,7 +3832,7 @@
           "label": "EOCR 상단 좌",
           "x": 35.68,
           "y": 23.21,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3476,7 +3842,7 @@
           "label": "EOCR 상단 우",
           "x": 38.68,
           "y": 23.21,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3486,7 +3852,7 @@
           "label": "EOCR 보조접점 상",
           "x": 37.12,
           "y": 50.06,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3496,7 +3862,7 @@
           "label": "EOCR 보조접점 하",
           "x": 37.12,
           "y": 54.06,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3506,7 +3872,7 @@
           "label": "EOCR 코일 상",
           "x": 33.63,
           "y": 62.56,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3516,7 +3882,7 @@
           "label": "EOCR 코일 하",
           "x": 33.63,
           "y": 68.16,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3526,7 +3892,7 @@
           "label": "YL 상",
           "x": 38.4,
           "y": 62.56,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3536,7 +3902,7 @@
           "label": "YL 하",
           "x": 38.4,
           "y": 68.16,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3546,7 +3912,7 @@
           "label": "BZ 상",
           "x": 43.2,
           "y": 62.56,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3556,7 +3922,7 @@
           "label": "BZ 하",
           "x": 43.2,
           "y": 68.16,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3566,7 +3932,7 @@
           "label": "FLS 상",
           "x": 47.77,
           "y": 62.56,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3576,7 +3942,7 @@
           "label": "FLS 하",
           "x": 47.77,
           "y": 68.16,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3586,7 +3952,7 @@
           "label": "TB4 E1",
           "x": 49.69,
           "y": 76.97,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3596,7 +3962,7 @@
           "label": "TB4 E2",
           "x": 51.19,
           "y": 76.97,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3606,7 +3972,7 @@
           "label": "TB4 E3",
           "x": 52.69,
           "y": 76.97,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3616,7 +3982,7 @@
           "label": "FR 상",
           "x": 57.02,
           "y": 62.32,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3626,7 +3992,7 @@
           "label": "FR 하",
           "x": 57.02,
           "y": 67.92,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3636,7 +4002,7 @@
           "label": "X 상",
           "x": 61.63,
           "y": 62.21,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3646,7 +4012,7 @@
           "label": "X 하",
           "x": 61.63,
           "y": 67.81,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3656,7 +4022,7 @@
           "label": "T 상",
           "x": 66.25,
           "y": 62.68,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3666,7 +4032,7 @@
           "label": "T 하",
           "x": 66.25,
           "y": 68.28,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3676,7 +4042,7 @@
           "label": "MC1 상",
           "x": 70.57,
           "y": 62.44,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3686,7 +4052,7 @@
           "label": "MC1 하",
           "x": 70.57,
           "y": 68.04,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3696,7 +4062,7 @@
           "label": "MC2 상",
           "x": 75.57,
           "y": 62.44,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3706,7 +4072,7 @@
           "label": "MC2 하",
           "x": 75.57,
           "y": 68.04,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3716,7 +4082,7 @@
           "label": "RL 상",
           "x": 84.59,
           "y": 62.44,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3726,7 +4092,7 @@
           "label": "RL 하",
           "x": 84.59,
           "y": 68.04,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3736,7 +4102,7 @@
           "label": "GL 상",
           "x": 89.17,
           "y": 62.44,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3746,7 +4112,7 @@
           "label": "GL 하",
           "x": 89.17,
           "y": 68.04,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3756,7 +4122,7 @@
           "label": "SS A 상",
           "x": 49.31,
           "y": 26.83,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3766,7 +4132,7 @@
           "label": "SS M 상",
           "x": 63.01,
           "y": 26.83,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3776,7 +4142,7 @@
           "label": "SS M 하",
           "x": 63.1,
           "y": 33.56,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3786,7 +4152,7 @@
           "label": "PB0 상",
           "x": 63.18,
           "y": 38.18,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3796,7 +4162,7 @@
           "label": "PB1 상",
           "x": 63.68,
           "y": 43.4,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3806,7 +4172,7 @@
           "label": "PB1 하",
           "x": 63.68,
           "y": 48.2,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3816,7 +4182,7 @@
           "label": "FLS 접점 상",
           "x": 58.62,
           "y": 43.08,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3826,7 +4192,7 @@
           "label": "FLS 접점 하",
           "x": 58.62,
           "y": 48.28,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3836,7 +4202,7 @@
           "label": "X 접점 상",
           "x": 67.87,
           "y": 43.17,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3846,7 +4212,7 @@
           "label": "X 접점 하",
           "x": 67.87,
           "y": 47.97,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3856,7 +4222,7 @@
           "label": "FR 좌접점 상",
           "x": 67.52,
           "y": 53.31,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3866,7 +4232,7 @@
           "label": "FR 좌접점 하",
           "x": 67.52,
           "y": 57.81,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3876,17 +4242,7 @@
           "label": "FR 우접점 상",
           "x": 72.42,
           "y": 53.31,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_r_b",
-          "label": "FR 우접점 하",
-          "x": 72.42,
-          "y": 57.81,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3894,9 +4250,9 @@
         {
           "id": "t_contact_a",
           "label": "T 접점 상",
-          "x": 77.5,
-          "y": 53.25,
-          "answer": "",
+          "x": 77.83,
+          "y": 53.13,
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3904,9 +4260,9 @@
         {
           "id": "t_contact_b",
           "label": "T 접점 하",
-          "x": 77.5,
-          "y": 58.05,
-          "answer": "",
+          "x": 77.83,
+          "y": 57.93,
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3916,47 +4272,67 @@
           "label": "MC1 접점 상",
           "x": 86.58,
           "y": 26.96,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 1,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "mc1_contact_b",
           "label": "MC1 접점 하",
           "x": 86.58,
           "y": 31.76,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 2,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "mc2_contact_a",
           "label": "MC2 접점 상",
           "x": 91.58,
           "y": 26.96,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 3,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "mc2_contact_b",
           "label": "MC2 접점 하",
           "x": 91.58,
           "y": 31.76,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 4,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "slot_mrbz3lu0_mxj",
           "label": "접점 상",
           "x": 23.58,
           "y": 33.16,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3966,7 +4342,7 @@
           "label": "접점 하",
           "x": 23.58,
           "y": 37.36,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3976,7 +4352,7 @@
           "label": "접점 상",
           "x": 82,
           "y": 53.08,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -3986,10 +4362,90 @@
           "label": "접점 하",
           "x": 82,
           "y": 57.28,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
+        },
+        {
+          "id": "slot_mrx9mr37_a4i",
+          "label": "칸 77",
+          "x": 13.08,
+          "y": 32.19,
+          "answer": "6",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9ntyr_klp",
+          "label": "칸 77",
+          "x": 72.41,
+          "y": 57.78,
+          "answer": "5",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9pmgj_taf",
+          "label": "접점 상",
+          "x": 94.33,
+          "y": 26.91,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 5,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9pmgj_n8u",
+          "label": "접점 하",
+          "x": 94.33,
+          "y": 31.11,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 6,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9pnk3_8sk",
+          "label": "접점 상",
+          "x": 88.42,
+          "y": 27.37,
+          "answer": "10",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 7,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9pnk3_03q",
+          "label": "접점 하",
+          "x": 88.42,
+          "y": 31.57,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 8,
+          "altPatterns": "4,10,4,10\n10,4,10,4",
+          "altVisibleCount": 4,
+          "altPairColors": true
         }
       ]
     },
@@ -4006,7 +4462,7 @@
           "label": "MCCB 1",
           "x": 8.18,
           "y": 31.67,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4016,7 +4472,7 @@
           "label": "MCCB 2",
           "x": 10.73,
           "y": 31.67,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4026,7 +4482,7 @@
           "label": "MCCB 3",
           "x": 13.28,
           "y": 31.67,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4036,7 +4492,7 @@
           "label": "MCCB 4",
           "x": 8.18,
           "y": 35.67,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4046,7 +4502,7 @@
           "label": "MCCB 5",
           "x": 10.73,
           "y": 35.67,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4056,7 +4512,7 @@
           "label": "MCCB 6",
           "x": 13.28,
           "y": 35.67,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4066,7 +4522,7 @@
           "label": "EOCR_MAIN 1",
           "x": 8.1,
           "y": 42.05,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4076,7 +4532,7 @@
           "label": "EOCR_MAIN 2",
           "x": 10.65,
           "y": 42.05,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4086,7 +4542,7 @@
           "label": "EOCR_MAIN 3",
           "x": 13.2,
           "y": 42.05,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4096,7 +4552,7 @@
           "label": "EOCR_MAIN 4",
           "x": 8.1,
           "y": 45.85,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4106,7 +4562,7 @@
           "label": "EOCR_MAIN 5",
           "x": 10.65,
           "y": 45.85,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4116,7 +4572,7 @@
           "label": "EOCR_MAIN 6",
           "x": 13.2,
           "y": 45.85,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4126,17 +4582,7 @@
           "label": "MC1_MAIN 1",
           "x": 8.27,
           "y": 53.38,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mc1_main_2",
-          "label": "MC1_MAIN 2",
-          "x": 10.82,
-          "y": 53.38,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4146,7 +4592,7 @@
           "label": "MC1_MAIN 3",
           "x": 13.37,
           "y": 53.38,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4156,7 +4602,7 @@
           "label": "MC1_MAIN 4",
           "x": 8.27,
           "y": 57.28,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4166,7 +4612,7 @@
           "label": "MC1_MAIN 5",
           "x": 10.82,
           "y": 57.28,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4176,7 +4622,7 @@
           "label": "MC1_MAIN 6",
           "x": 13.37,
           "y": 57.28,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4186,7 +4632,7 @@
           "label": "MC2 주접점 1",
           "x": 19.83,
           "y": 53.26,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4196,7 +4642,7 @@
           "label": "MC2 주접점 2",
           "x": 22.43,
           "y": 53.26,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4206,7 +4652,7 @@
           "label": "MC2 주접점 3",
           "x": 24.93,
           "y": 53.26,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4216,7 +4662,7 @@
           "label": "MC2 주접점 4",
           "x": 19.83,
           "y": 57.16,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4226,7 +4672,7 @@
           "label": "MC2 주접점 5",
           "x": 22.43,
           "y": 57.16,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4236,7 +4682,7 @@
           "label": "MC2 주접점 6",
           "x": 24.93,
           "y": 57.16,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4246,7 +4692,7 @@
           "label": "EOCR 상단 좌",
           "x": 35.77,
           "y": 32.76,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4256,7 +4702,7 @@
           "label": "EOCR 상단 우",
           "x": 38.77,
           "y": 32.76,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4266,7 +4712,7 @@
           "label": "EOCR 보조접점 상",
           "x": 37.12,
           "y": 53.01,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4276,7 +4722,7 @@
           "label": "EOCR 보조접점 하",
           "x": 37.12,
           "y": 57.01,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4286,7 +4732,7 @@
           "label": "EOCR 코일 상",
           "x": 33.63,
           "y": 65.39,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4296,7 +4742,7 @@
           "label": "EOCR 코일 하",
           "x": 33.63,
           "y": 70.99,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4306,7 +4752,7 @@
           "label": "YL 상",
           "x": 38.4,
           "y": 65.39,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4316,17 +4762,7 @@
           "label": "YL 하",
           "x": 38.4,
           "y": 70.99,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "bz_top",
-          "label": "BZ 상",
-          "x": 43.2,
-          "y": 65.39,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4336,7 +4772,7 @@
           "label": "BZ 하",
           "x": 43.2,
           "y": 70.99,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4346,7 +4782,7 @@
           "label": "FLS 상",
           "x": 47.85,
           "y": 65.74,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4356,7 +4792,7 @@
           "label": "FLS 하",
           "x": 47.85,
           "y": 71.34,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4366,7 +4802,7 @@
           "label": "TB4 E1",
           "x": 49.93,
           "y": 79.32,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4376,7 +4812,7 @@
           "label": "TB4 E2",
           "x": 51.43,
           "y": 79.32,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4386,27 +4822,7 @@
           "label": "TB4 E3",
           "x": 52.93,
           "y": 79.32,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_coil_top",
-          "label": "FR 상",
-          "x": 72.45,
-          "y": 32.61,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_coil_bottom",
-          "label": "FR 하",
-          "x": 72.45,
-          "y": 38.21,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4416,7 +4832,7 @@
           "label": "X 상",
           "x": 61.46,
           "y": 65.51,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4426,27 +4842,7 @@
           "label": "X 하",
           "x": 61.46,
           "y": 71.11,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "t_coil_top",
-          "label": "T 상",
-          "x": 72.45,
-          "y": 32.61,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "t_coil_bottom",
-          "label": "T 하",
-          "x": 72.45,
-          "y": 38.21,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4456,7 +4852,7 @@
           "label": "MC1 상",
           "x": 79.92,
           "y": 65.74,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4466,7 +4862,7 @@
           "label": "MC1 하",
           "x": 79.92,
           "y": 71.34,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4492,21 +4888,11 @@
           "memo": ""
         },
         {
-          "id": "rl_top",
-          "label": "RL 상",
-          "x": 84.58,
-          "y": 65.63,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
           "id": "rl_bottom",
           "label": "RL 하",
           "x": 84.58,
           "y": 71.23,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4516,7 +4902,7 @@
           "label": "GL 상",
           "x": 89.33,
           "y": 65.74,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4526,7 +4912,7 @@
           "label": "GL 하",
           "x": 89.33,
           "y": 71.34,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4536,7 +4922,7 @@
           "label": "SS A 상",
           "x": 49.53,
           "y": 33.08,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4546,7 +4932,7 @@
           "label": "SS M 상",
           "x": 63.02,
           "y": 33.08,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4556,7 +4942,7 @@
           "label": "PB0 상",
           "x": 63.02,
           "y": 40.02,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4566,7 +4952,7 @@
           "label": "PB0 하",
           "x": 63.02,
           "y": 44.22,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4576,7 +4962,7 @@
           "label": "PB1 상",
           "x": 63.6,
           "y": 49.77,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4586,7 +4972,7 @@
           "label": "PB1 하",
           "x": 63.6,
           "y": 54.57,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4596,7 +4982,7 @@
           "label": "X 접점 상",
           "x": 72.7,
           "y": 59.2,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4606,7 +4992,7 @@
           "label": "X 접점 하",
           "x": 72.7,
           "y": 64,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4616,7 +5002,7 @@
           "label": "FR 좌접점 상",
           "x": 58.93,
           "y": 50.01,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4626,7 +5012,7 @@
           "label": "FR 좌접점 하",
           "x": 58.93,
           "y": 54.51,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4636,7 +5022,7 @@
           "label": "접점 상",
           "x": 23.67,
           "y": 35.87,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4646,7 +5032,7 @@
           "label": "접점 하",
           "x": 23.67,
           "y": 40.07,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4656,7 +5042,7 @@
           "label": "접점 상",
           "x": 67.84,
           "y": 49.66,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4666,17 +5052,7 @@
           "label": "접점 하",
           "x": 67.84,
           "y": 53.86,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "slot_mrbzaj9k_xbq",
-          "label": "접점 상",
-          "x": 59.83,
-          "y": 59.33,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4684,19 +5060,24 @@
         {
           "id": "slot_mrbzaj9k_cjk",
           "label": "접점 하",
-          "x": 59.83,
-          "y": 63.53,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "x": 60,
+          "y": 63.29,
+          "answer": "5",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 1,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
         },
         {
           "id": "slot_mrbzb2ig_hmf",
           "label": "코일 상",
           "x": 75.42,
           "y": 65.51,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4706,7 +5087,7 @@
           "label": "코일 하",
           "x": 75.42,
           "y": 70.71,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4716,7 +5097,7 @@
           "label": "코일 상",
           "x": 70.58,
           "y": 65.99,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4726,7 +5107,7 @@
           "label": "코일 하",
           "x": 70.58,
           "y": 71.19,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4736,7 +5117,7 @@
           "label": "접점 상",
           "x": 91.5,
           "y": 49.66,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4746,7 +5127,7 @@
           "label": "접점 하",
           "x": 91.5,
           "y": 53.86,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4756,17 +5137,7 @@
           "label": "접점 상",
           "x": 76.83,
           "y": 49.78,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "slot_mrbzb7tz_ugo",
-          "label": "접점 하",
-          "x": 76.83,
-          "y": 53.98,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4776,7 +5147,7 @@
           "label": "접점 상",
           "x": 85.92,
           "y": 49.66,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4786,7 +5157,7 @@
           "label": "접점 하",
           "x": 85.92,
           "y": 53.86,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4796,7 +5167,7 @@
           "label": "코일 상",
           "x": 56.92,
           "y": 65.39,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4806,10 +5177,275 @@
           "label": "코일 하",
           "x": 56.92,
           "y": 70.59,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
+        },
+        {
+          "id": "slot_mrx9w6wj_mnq",
+          "label": "칸 81",
+          "x": 10.58,
+          "y": 53.29,
+          "answer": "2",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9wrfn_h1o",
+          "label": "칸 81",
+          "x": 43,
+          "y": 65.56,
+          "answer": "+",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9y3mb_fan",
+          "label": "칸 81",
+          "x": 59.75,
+          "y": 60.13,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 2,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9ykg3_odz",
+          "label": "칸 81",
+          "x": 76.5,
+          "y": 54,
+          "answer": "5",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9z8gb_t0s",
+          "label": "칸 81",
+          "x": 84.5,
+          "y": 65.56,
+          "answer": "+",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrx9zrnv_4jr",
+          "label": "접점 상",
+          "x": 74.59,
+          "y": 32.91,
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 3,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9zrnv_nwo",
+          "label": "접점 하",
+          "x": 74.59,
+          "y": 37.11,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 4,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9ztzv_ea9",
+          "label": "접점 상",
+          "x": 63.58,
+          "y": 59.68,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 5,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrx9ztzv_xgb",
+          "label": "접점 하",
+          "x": 63.75,
+          "y": 63.64,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 6,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa03gz_ji7",
+          "label": "접점 상",
+          "x": 76.76,
+          "y": 32.91,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 7,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa03gz_3df",
+          "label": "접점 하",
+          "x": 76.76,
+          "y": 37.11,
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 8,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa080z_2bi",
+          "label": "접점 상",
+          "x": 66.01,
+          "y": 59.33,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 9,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa080z_ht5",
+          "label": "접점 하",
+          "x": 66.01,
+          "y": 63.53,
+          "answer": "4",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 10,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa0i7f_cuh",
+          "label": "접점 상",
+          "x": 78.75,
+          "y": 32.68,
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 11,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa0i7f_tc3",
+          "label": "접점 하",
+          "x": 78.75,
+          "y": 36.88,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 12,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa0jfv_dyd",
+          "label": "접점 상",
+          "x": 67.84,
+          "y": 59.44,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 13,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa0jfv_mls",
+          "label": "접점 하",
+          "x": 67.84,
+          "y": 63.64,
+          "answer": "5",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 14,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa5h17_2vs",
+          "label": "접점 상",
+          "x": 72.5,
+          "y": 33.39,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 15,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxa5h17_b5n",
+          "label": "접점 하",
+          "x": 72.5,
+          "y": 37.59,
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altVisibleCount": 4,
+          "altKey": "패턴1",
+          "altIndex": 16,
+          "altPatterns": "1,3,8,5\n3,1,1,4\n8,6,1,4\n6,8,8,5",
+          "altPairColors": true
         }
       ]
     },
@@ -4826,7 +5462,7 @@
           "label": "MCCB 1",
           "x": 8.52,
           "y": 37.09,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4836,7 +5472,7 @@
           "label": "MCCB 2",
           "x": 11.07,
           "y": 37.09,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4846,7 +5482,7 @@
           "label": "MCCB 3",
           "x": 13.62,
           "y": 37.09,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4856,7 +5492,7 @@
           "label": "MCCB 4",
           "x": 8.52,
           "y": 41.09,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4866,7 +5502,7 @@
           "label": "MCCB 5",
           "x": 11.07,
           "y": 41.09,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4876,7 +5512,7 @@
           "label": "MCCB 6",
           "x": 13.62,
           "y": 41.09,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4886,7 +5522,7 @@
           "label": "EOCR_MAIN 1",
           "x": 8.68,
           "y": 47.12,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4896,7 +5532,7 @@
           "label": "EOCR_MAIN 2",
           "x": 11.23,
           "y": 47.12,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4906,7 +5542,7 @@
           "label": "EOCR_MAIN 3",
           "x": 13.78,
           "y": 47.12,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4916,7 +5552,7 @@
           "label": "EOCR_MAIN 4",
           "x": 8.68,
           "y": 50.92,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4926,7 +5562,7 @@
           "label": "EOCR_MAIN 5",
           "x": 11.23,
           "y": 50.92,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4936,7 +5572,7 @@
           "label": "EOCR_MAIN 6",
           "x": 13.78,
           "y": 50.92,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4946,7 +5582,7 @@
           "label": "MC1_MAIN 1",
           "x": 8.52,
           "y": 58.45,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4956,7 +5592,7 @@
           "label": "MC1_MAIN 2",
           "x": 11.07,
           "y": 58.45,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4966,7 +5602,7 @@
           "label": "MC1_MAIN 3",
           "x": 13.62,
           "y": 58.45,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4976,7 +5612,7 @@
           "label": "MC1_MAIN 4",
           "x": 8.52,
           "y": 62.35,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4986,7 +5622,7 @@
           "label": "MC1_MAIN 5",
           "x": 11.07,
           "y": 62.35,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -4996,7 +5632,7 @@
           "label": "MC1_MAIN 6",
           "x": 13.62,
           "y": 62.35,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5006,7 +5642,7 @@
           "label": "MC2 주접점 1",
           "x": 19.83,
           "y": 59.04,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5016,7 +5652,7 @@
           "label": "MC2 주접점 2",
           "x": 22.43,
           "y": 59.04,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5026,7 +5662,7 @@
           "label": "MC2 주접점 3",
           "x": 24.93,
           "y": 59.04,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5036,7 +5672,7 @@
           "label": "MC2 주접점 4",
           "x": 19.83,
           "y": 62.94,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5046,7 +5682,7 @@
           "label": "MC2 주접점 5",
           "x": 22.43,
           "y": 62.94,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5056,7 +5692,7 @@
           "label": "MC2 주접점 6",
           "x": 24.93,
           "y": 62.94,
-          "answer": "",
+          "answer": "9",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5066,7 +5702,7 @@
           "label": "EOCR 상단 좌",
           "x": 36.1,
           "y": 38.3,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5076,7 +5712,7 @@
           "label": "EOCR 상단 우",
           "x": 39.1,
           "y": 38.3,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5086,7 +5722,7 @@
           "label": "EOCR 보조접점 상",
           "x": 37.28,
           "y": 58.67,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5096,7 +5732,7 @@
           "label": "EOCR 보조접점 하",
           "x": 37.28,
           "y": 62.67,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5106,7 +5742,7 @@
           "label": "EOCR 코일 상",
           "x": 34.13,
           "y": 71.05,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5116,7 +5752,7 @@
           "label": "EOCR 코일 하",
           "x": 34.13,
           "y": 76.65,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5126,7 +5762,7 @@
           "label": "BZ 상",
           "x": 43.37,
           "y": 71.05,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5136,7 +5772,7 @@
           "label": "BZ 하",
           "x": 43.37,
           "y": 76.65,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5146,7 +5782,7 @@
           "label": "FLS 상",
           "x": 47.94,
           "y": 71.17,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5156,7 +5792,7 @@
           "label": "FLS 하",
           "x": 47.94,
           "y": 76.77,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5166,7 +5802,7 @@
           "label": "TB4 E1",
           "x": 49.94,
           "y": 85.35,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5176,7 +5812,7 @@
           "label": "TB4 E2",
           "x": 51.44,
           "y": 85.35,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5186,7 +5822,7 @@
           "label": "TB4 E3",
           "x": 52.94,
           "y": 85.35,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5196,17 +5832,7 @@
           "label": "FR 상",
           "x": 70.87,
           "y": 71.4,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "fr_coil_bottom",
-          "label": "FR 하",
-          "x": 70.87,
-          "y": 77,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5216,7 +5842,7 @@
           "label": "X 상",
           "x": 57.3,
           "y": 71.05,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5226,17 +5852,7 @@
           "label": "X 하",
           "x": 57.3,
           "y": 76.65,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "t_coil_top",
-          "label": "T 상",
-          "x": 70.87,
-          "y": 71.4,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5246,7 +5862,7 @@
           "label": "T 하",
           "x": 70.87,
           "y": 77,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5256,7 +5872,7 @@
           "label": "MC1 상",
           "x": 75.67,
           "y": 71.4,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5266,7 +5882,7 @@
           "label": "MC1 하",
           "x": 75.67,
           "y": 77,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5276,17 +5892,7 @@
           "label": "MC2 상",
           "x": 89.75,
           "y": 71.05,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "mc2_coil_bottom",
-          "label": "MC2 하",
-          "x": 89.75,
-          "y": 76.65,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5296,7 +5902,7 @@
           "label": "RL 상",
           "x": 84.75,
           "y": 71.05,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5306,17 +5912,7 @@
           "label": "RL 하",
           "x": 84.75,
           "y": 76.65,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "gl_top",
-          "label": "GL 상",
-          "x": 89.75,
-          "y": 71.05,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5326,7 +5922,7 @@
           "label": "GL 하",
           "x": 89.75,
           "y": 76.65,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5336,7 +5932,7 @@
           "label": "SS A 상",
           "x": 58.53,
           "y": 37.91,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5346,7 +5942,7 @@
           "label": "SS M 상",
           "x": 63.43,
           "y": 38.03,
-          "answer": "",
+          "answer": "s",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5356,7 +5952,7 @@
           "label": "PB0 상",
           "x": 63.6,
           "y": 45.56,
-          "answer": "",
+          "answer": "1",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5366,7 +5962,7 @@
           "label": "PB0 하",
           "x": 63.6,
           "y": 49.76,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5376,17 +5972,7 @@
           "label": "PB1 상",
           "x": 63.68,
           "y": 55.08,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
-        },
-        {
-          "id": "pb1_b",
-          "label": "PB1 하",
-          "x": 63.68,
-          "y": 59.88,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5396,7 +5982,7 @@
           "label": "FLS 접점 상",
           "x": 58.95,
           "y": 54.87,
-          "answer": "",
+          "answer": "3",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5406,7 +5992,7 @@
           "label": "FLS 접점 하",
           "x": 58.95,
           "y": 60.07,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5416,47 +6002,67 @@
           "label": "X 접점 상",
           "x": 68.45,
           "y": 54.84,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 1,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "x_contact_b",
           "label": "X 접점 하",
           "x": 68.45,
           "y": 59.64,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 2,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "fr_l_a",
           "label": "FR 좌접점 상",
           "x": 72.77,
           "y": 39.05,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 3,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "fr_l_b",
           "label": "FR 좌접점 하",
           "x": 72.77,
           "y": 43.55,
-          "answer": "",
-          "type": "normal",
-          "pairKey": "",
-          "memo": ""
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 4,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         },
         {
           "id": "fr_r_a",
           "label": "FR 우접점 상",
           "x": 72.67,
           "y": 55.08,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5466,7 +6072,7 @@
           "label": "FR 우접점 하",
           "x": 72.67,
           "y": 59.58,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5476,7 +6082,7 @@
           "label": "T 접점 상",
           "x": 74.17,
           "y": 64.34,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5486,7 +6092,7 @@
           "label": "T 접점 하",
           "x": 74.17,
           "y": 69.14,
-          "answer": "",
+          "answer": "5",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5496,7 +6102,7 @@
           "label": "MC1 접점 상",
           "x": 86.75,
           "y": 38.75,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5506,7 +6112,7 @@
           "label": "MC1 접점 하",
           "x": 86.75,
           "y": 43.55,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5516,7 +6122,7 @@
           "label": "MC2 접점 상",
           "x": 91.75,
           "y": 38.75,
-          "answer": "",
+          "answer": "4",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5526,7 +6132,7 @@
           "label": "MC2 접점 하",
           "x": 91.75,
           "y": 43.55,
-          "answer": "",
+          "answer": "10",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5536,7 +6142,7 @@
           "label": "접점 상",
           "x": 23.84,
           "y": 41.53,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5546,7 +6152,7 @@
           "label": "접점 하",
           "x": 23.84,
           "y": 45.73,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5556,7 +6162,7 @@
           "label": "코일 상",
           "x": 38.75,
           "y": 71.41,
-          "answer": "",
+          "answer": "+",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5566,7 +6172,7 @@
           "label": "코일 하",
           "x": 38.75,
           "y": 76.61,
-          "answer": "",
+          "answer": "-",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5576,7 +6182,7 @@
           "label": "코일 상",
           "x": 80,
           "y": 71.29,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5586,7 +6192,7 @@
           "label": "코일 하",
           "x": 80,
           "y": 76.49,
-          "answer": "",
+          "answer": "12",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5596,7 +6202,7 @@
           "label": "접점 상",
           "x": 82.33,
           "y": 65.1,
-          "answer": "",
+          "answer": "8",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5606,7 +6212,7 @@
           "label": "접점 하",
           "x": 82.33,
           "y": 69.3,
-          "answer": "",
+          "answer": "6",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5616,7 +6222,7 @@
           "label": "코일 상",
           "x": 61.75,
           "y": 71.29,
-          "answer": "",
+          "answer": "2",
           "type": "normal",
           "pairKey": "",
           "memo": ""
@@ -5626,10 +6232,120 @@
           "label": "코일 하",
           "x": 61.75,
           "y": 76.49,
-          "answer": "",
+          "answer": "7",
           "type": "normal",
           "pairKey": "",
           "memo": ""
+        },
+        {
+          "id": "slot_mrxah9d7_p21",
+          "label": "칸 77",
+          "x": 63.58,
+          "y": 59.19,
+          "answer": "4",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrxai3ur_ry2",
+          "label": "접점 상",
+          "x": 88.42,
+          "y": 38.7,
+          "answer": "10",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrxai3ur_b6t",
+          "label": "접점 하",
+          "x": 88.42,
+          "y": 42.9,
+          "answer": "4",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrxai4r7_kpx",
+          "label": "접점 상",
+          "x": 93.67,
+          "y": 39.4,
+          "answer": "10",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrxai4r7_wtp",
+          "label": "접점 하",
+          "x": 93.67,
+          "y": 43.6,
+          "answer": "4",
+          "type": "normal",
+          "pairKey": "",
+          "memo": ""
+        },
+        {
+          "id": "slot_mrxaj2iz_oyi",
+          "label": "접점 상",
+          "x": 66.08,
+          "y": 55.08,
+          "answer": "1",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 5,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxaj2iz_t15",
+          "label": "접점 하",
+          "x": 66.08,
+          "y": 59.28,
+          "answer": "3",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 6,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxajcd7_og4",
+          "label": "접점 상",
+          "x": 69.75,
+          "y": 38.93,
+          "answer": "8",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 7,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
+        },
+        {
+          "id": "slot_mrxajcd7_4r1",
+          "label": "접점 하",
+          "x": 69.75,
+          "y": 43.13,
+          "answer": "6",
+          "type": "alt",
+          "pairKey": "패턴1",
+          "memo": "",
+          "altKey": "패턴1",
+          "altIndex": 8,
+          "altPatterns": "1,3,8,6\n8,6,1,3",
+          "altVisibleCount": 4,
+          "altPairColors": true
         }
       ]
     },
