@@ -279,7 +279,7 @@ function render(){
   let diagram=wrap.querySelector("#diagram"); diagram.onclick=onDiagramClick; diagram.onpointerdown=startBoxSelect; diagram.onpointermove=moveBoxSelect; diagram.onpointerup=endBoxSelect;
   (c.slots||[]).forEach(renderSlot);
   if(mode==="edit" || mode==="ref") renderAltPatternBadges();
-  if(mode==="ref") renderAltHints();
+  renderAltHints();
   document.getElementById("panelTitle").textContent=mode==="edit"?"편집":mode==="exam"?"채점":"참고";
   document.getElementById("editHelp").style.display=mode==="edit"?"":"none";
   document.getElementById("toolbox").style.display=mode==="edit"?"":"none";
@@ -515,7 +515,6 @@ function renderAltHints(){
     }else{
       groupEls.forEach(el=>{
         el.addEventListener("click",e=>{
-          e.preventDefault();
           e.stopPropagation();
           const willShow=!hint.classList.contains("show");
           closeAll(hint);
