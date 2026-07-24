@@ -346,6 +346,7 @@ function altGroupColorIndex(key){
 }
 function altPairColorIndex(slot){
   if(!slot || slot.type!=="alt") return 0;
+  if(Number.isInteger(slot.altManualColor)) return Math.max(0,Math.min(3,slot.altManualColor));
   let key=slot.altKey||slot.pairKey;
   let g=getGroupSlots(key).slice().sort(slotOrderForAlt);
   let patterns=parseAltPatterns(g.find(s=>s.altPatterns)?.altPatterns || "");
@@ -400,7 +401,10 @@ function renderSlot(slot){
   el.style.top=slot.y+"%";
   el.maxLength=4;
   el.tabIndex=0;
-  el.inputMode="numeric";
+  el.inputMode="text";
+  el.setAttribute("inputmode","text");
+  el.setAttribute("enterkeyhint","next");
+  el.autocapitalize="characters";
   el.autocomplete="off";
   el.title=(slot.label||slot.id)+" / 정답: "+(slot.answer||"");
   el.onfocus=()=>{
@@ -670,7 +674,7 @@ function renderGroupEditor(groupSlots, title="패턴 그룹"){
   };
   document.getElementById("ungroupBtn").onclick=()=>{
     if(!confirm("이 칸들을 패턴 그룹에서 해제할까요?"))return;
-    groupSlots.forEach(x=>{x.type="normal"; delete x.altKey; delete x.altIndex; delete x.altPatterns; delete x.altPairColors; x.pairKey="";});
+    groupSlots.forEach(x=>{x.type="normal"; delete x.altKey; delete x.altIndex; delete x.altPatterns; delete x.altPairColors; delete x.altManualColor; x.pairKey="";});
     saveAuto(); selectedSlotIds=[]; selectedSlotId=null; render();
   };
 }
@@ -693,7 +697,7 @@ function bindPatternGroupListButtons(){
   props.querySelectorAll('.deleteGroupBtn').forEach(btn=>btn.onclick=()=>{
     let key=btn.dataset.key;
     if(!confirm(key+' 그룹을 삭제할까요?'))return;
-    getGroupSlots(key).forEach(s=>{s.type='normal'; delete s.altKey; delete s.altIndex; delete s.altPatterns; delete s.altPairColors; s.pairKey='';});
+    getGroupSlots(key).forEach(s=>{s.type='normal'; delete s.altKey; delete s.altIndex; delete s.altPatterns; delete s.altPairColors; delete s.altManualColor; s.pairKey='';});
     saveAuto(); render();
   });
 }
@@ -701,7 +705,7 @@ function basicSlotForm(s){
   return `<div class="field"><label>라벨</label><input id="p_label" value="${esc(s.label||"")}"></div><div class="inline"><div class="field"><label>X%</label><input id="p_x" type="number" step="0.1" value="${s.x}"></div><div class="field"><label>Y%</label><input id="p_y" type="number" step="0.1" value="${s.y}"></div></div><div class="field"><label>기본 정답</label><input id="p_answer" value="${esc(s.answer||"")}" placeholder="예: 3"></div><div class="field"><label>칸 종류</label><select id="p_type"><option value="normal" ${s.type==="normal"?"selected":""}>일반 채점칸</option><option value="pair" ${s.type==="pair"?"selected":""}>순서무시 묶음</option><option value="refOnly" ${s.type==="refOnly"?"selected":""}>참고모드 전용칸</option><option value="ignore" ${s.type==="ignore"?"selected":""}>무시/채점제외</option><option value="alt" ${s.type==="alt"?"selected":""}>패턴 그룹칸</option></select></div><div class="field"><label>순서무시 묶음 이름</label><input id="p_pair" value="${esc(s.type==="pair"?(s.pairKey||""):"")}" placeholder="예: MC코일"></div><div class="field"><label>메모</label><input id="p_memo" value="${esc(s.memo||"")}"></div><div class="rowBtns"><button id="dupBtn">복제</button><button id="deleteBtn" class="bad">삭제</button></div>`;
 }
 function bindBasicFields(s){
-  bind("p_label",v=>s.label=v); bind("p_x",v=>s.x=+v); bind("p_y",v=>s.y=+v); bind("p_answer",v=>s.answer=v); bind("p_type",v=>{s.type=v; if(v!=="alt"){delete s.altKey; delete s.altIndex; delete s.altPatterns; delete s.altPairColors;} }); bind("p_pair",v=>{if(s.type==="pair")s.pairKey=v}); bind("p_memo",v=>s.memo=v);
+  bind("p_label",v=>s.label=v); bind("p_x",v=>s.x=+v); bind("p_y",v=>s.y=+v); bind("p_answer",v=>s.answer=v); bind("p_type",v=>{s.type=v; if(v!=="alt"){delete s.altKey; delete s.altIndex; delete s.altPatterns; delete s.altPairColors; delete s.altManualColor;} }); bind("p_pair",v=>{if(s.type==="pair")s.pairKey=v}); bind("p_memo",v=>s.memo=v);
   document.getElementById("dupBtn").onclick=duplicateSlot; document.getElementById("deleteBtn").onclick=deleteSelected;
 }
 function renderProps(){
@@ -710,15 +714,67 @@ function renderProps(){
   if(!s){props.innerHTML='<div class="small">선택된 칸 없음. 도면을 클릭하면 현재 선택한 부품 세트가 생성됩니다.</div><h3>패턴 그룹 목록</h3>'+renderPatternGroupList(); bindPatternGroupListButtons(); return}
   if(selectedSlotIds.length>1){
     let arr=selectedSlots().slice();
-    props.innerHTML=`<div class="result small"><b>${arr.length}개 선택됨</b></div><div class="multiList small">${arr.map((x,i)=>`${i+1}. ${esc(x.label||x.id)} (${esc(x.answer||"")})`).join("<br>")}</div><button id="makePatternGroupBtn" class="ok">선택한 칸으로 패턴 그룹 만들기</button><h3>패턴 그룹 목록</h3>${renderPatternGroupList()}`;
+    props.innerHTML=`<div class="result small"><b>${arr.length}개 선택됨</b></div>
+    <div class="multiList small">${arr.map((x,i)=>`${i+1}. ${esc(x.label||x.id)} (${esc(x.answer||"")})`).join("<br>")}</div>
+    <div class="small tip"><b>수동 짝꿍 색상</b><br>같은 색으로 묶을 칸들만 선택한 다음 색상을 누르세요. 정답·채점에는 영향이 없습니다.</div>
+    <div class="rowBtns">
+      <button id="manualColor0" style="border-color:#ef0000">빨강</button>
+      <button id="manualColor1" style="border-color:#00a000">초록</button>
+      <button id="manualColor2" style="border-color:#7a00ff">보라</button>
+      <button id="manualColor3" style="border-color:#d6a900">노랑</button>
+      <button id="manualColorClear">자동으로 되돌리기</button>
+    </div>
+    <button id="makePatternGroupBtn" class="ok">선택한 칸으로 패턴 그룹 만들기</button>
+    <h3>패턴 그룹 목록</h3>${renderPatternGroupList()}`;
+
+    const setManualColor=(color)=>{
+      arr.forEach(x=>{
+        if(x.type==="alt"){
+          if(color===null) delete x.altManualColor;
+          else x.altManualColor=color;
+        }
+      });
+      saveAuto();
+      render();
+    };
+    document.getElementById("manualColor0").onclick=()=>setManualColor(0);
+    document.getElementById("manualColor1").onclick=()=>setManualColor(1);
+    document.getElementById("manualColor2").onclick=()=>setManualColor(2);
+    document.getElementById("manualColor3").onclick=()=>setManualColor(3);
+    document.getElementById("manualColorClear").onclick=()=>setManualColor(null);
     document.getElementById("makePatternGroupBtn").onclick=()=>renderGroupEditor(arr,"새 패턴 그룹");
     bindPatternGroupListButtons();
     return;
   }
   if(s.type==="alt"&&(s.altKey||s.pairKey)){
     let group=getGroupSlots(s.altKey||s.pairKey);
-    props.innerHTML=`<div class="result small"><b>이 칸은 패턴 그룹에 포함되어 있습니다.</b><br>그룹 전체를 수정합니다.</div>`;
     renderGroupEditor(group,"패턴 그룹 수정");
+
+    const colorBox=document.createElement("div");
+    colorBox.innerHTML=`
+      <div class="result small"><b>선택한 네모칸 색상 변경</b><br>
+      현재 선택한 칸 하나의 색만 바뀝니다. 짝꿍 칸도 각각 선택해서 같은 색으로 지정하세요.<br>
+      정답과 채점에는 영향이 없습니다.</div>
+      <div class="rowBtns">
+        <button id="oneColor0" style="border:2px solid #ef0000;background:#ffe1e1;color:#111">빨강</button>
+        <button id="oneColor1" style="border:2px solid #00a000;background:#ddffdd;color:#111">초록</button>
+        <button id="oneColor2" style="border:2px solid #7a00ff;background:#eee0ff;color:#111">보라</button>
+        <button id="oneColor3" style="border:2px solid #d6a900;background:#fff3a6;color:#111">노랑</button>
+        <button id="oneColorClear">자동 색상</button>
+      </div>`;
+    props.insertBefore(colorBox,props.firstChild);
+
+    const setOneColor=(color)=>{
+      if(color===null) delete s.altManualColor;
+      else s.altManualColor=color;
+      saveAuto();
+      render();
+    };
+    document.getElementById("oneColor0").onclick=()=>setOneColor(0);
+    document.getElementById("oneColor1").onclick=()=>setOneColor(1);
+    document.getElementById("oneColor2").onclick=()=>setOneColor(2);
+    document.getElementById("oneColor3").onclick=()=>setOneColor(3);
+    document.getElementById("oneColorClear").onclick=()=>setOneColor(null);
     return;
   }
   props.innerHTML=basicSlotForm(s);
